@@ -41,7 +41,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <header className='relative h-[500px] xl:h-screen overflow-hidden '>
-        <div className='bg-[#0219AC]/20 h-full w-full absolute left-0 top-0 opacity-100 z-10'></div>
+        <div className='absolute top-0 left-0 z-10 w-full h-full opacity-100 bg-slate-100/20'></div>
         <div className='bg-gradient-to-r from-[#0219AC] to-[#2D63F6] h-full w-full absolute left-0 top-0 opacity-100'></div>
         <video
           className='absolute z-0 w-auto h-auto min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2 top-[45%] left-1/2'
@@ -80,11 +80,15 @@ export default function Home() {
           {/* TEXT */}
           <div className='z-20 flex flex-col items-center justify-center p-20 2xl:mt-36'>
             <div className='w-1/2 text-center space-y-9'>
-              <h2 className='text-4xl font-bold tracking-wider'>Dobro došli na web stranicu Ganjgo line d.o.o.</h2>
-              <p className='text-lg font-semibold tracking-wider'>
+              <h2 className='text-4xl font-bold tracking-wider 2xl:text-6xl'>
+                Dobro došli na web stranicu Ganjgo line d.o.o.
+              </h2>
+              <p className='text-lg font-semibold tracking-wider 2xl:text-3xl'>
                 Na našem tehničkom pregledu dočekaće Vas stručno i ljubazno osoblje sa vrhunskom kvalitetom usluge
               </p>
-              <button className='px-8 py-2 bg-gradient-to-r from-[#0219AC] to-[#2D63F6] rounded-full'>Kontakt</button>
+              <button className='px-8 py-2 bg-gradient-to-r from-[#0219AC] to-[#2D63F6] rounded-full uppercase 2xl:text-2xl 2xl:font-semibold 2xl:px-12 2xl:py-6'>
+                Kontakt
+              </button>
             </div>
           </div>
         </div>
