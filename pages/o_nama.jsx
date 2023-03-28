@@ -1,6 +1,7 @@
 import Header from '@/components/Header'
 import Navbar from '@/components/Navbar'
 import Head from 'next/head'
+import Image from 'next/image'
 import React from 'react'
 
 const About = () => {
@@ -25,6 +26,71 @@ const About = () => {
           </div>
         </Navbar>
       </Header>
+
+      {/* KOLEKCIJA SLIKA */}
+      <section className='bg-[#171B29] text-white px-10 py-14 text-lg leading-8'>
+        <p>
+          Ganjgo line d.o.o. posluje od 2007. godine sa sjedištem u općini Doboj Jug na adresi 203 brigade br.88
+          Matuzići. Osnovna djelatnost naše firme jeste usluge tehničkog pregleda svih vrsta vozila. U sklopu tehničkog
+          pregleda nudimo i baždarenje(ispitivanje) i ugradnja svih vrsta analognih i digitalnih tahografa kao i nove
+          smart tahografe. U našem objektu također imamo i homologaciju,certifikaciju,sve vrste atesta, ADR vozilima,
+          atesti plina, cemt potvrde o usklađenosti vozila. Nudimo usluge servisa,baždarenje,punjenje i prodaju
+          vatrogasni aparata. Cilj je da naši kupci budu što zadovoljni te da imaju sve na jednom mjestu, tu su i
+          osiguravajuće kuće. Ganjgo line nudi i usluge transporta na lokaciji Njemačke, Francuske, Holandije, Belgije,
+          Španije...
+        </p>
+        <div className='grid grid-cols-3 grid-rows-3 gap-6 mt-8'>
+          <div className='col-span-2 row-span-2'>
+            <Image width={2000} height={1000} src='/slike/Placement_Area_ASSETsmallSIZED.png' alt='homologacija' />
+          </div>
+          <div className='col-span-1'>
+            <Image width={1000} height={1000} src='/slike/Placement_Area_ASSETsmallSIZED_bn.png' alt='3_auta' />
+          </div>
+          <div className='col-span-1 row-span-2'>
+            <Image width={1000} height={1000} src='/slike/Placement_Area_ASSETsmallSIZED_b.png' alt='popravak' />
+          </div>
+          <div className='col-span-1'>
+            <Image width={1000} height={1000} src='/slike/Placement_Area_ASSETsmallSIZED_bq.png' alt='benzinska' />
+          </div>
+          <div className='col-span-1'>
+            <Image width={1000} height={1000} src='/slike/Placement_Area_ASSETsmallSIZED_bw.png' alt='auto' />
+          </div>
+          <div className='col-span-1'>
+            <Image width={580} height={100} src='/slike/Placement_Area_ASSETsmallSIZED_bt.png' alt='vatrogasno' />
+          </div>
+          <div className='col-span-2 row-span-1'>
+            <Image width={2000} height={1000} src='/slike/Placement_Area_ASSETsmallSIZED_bz.png' alt='ulaz' />
+          </div>
+        </div>
+      </section>
+
+      {/* HISTORIJA */}
+      <section className='bg-[#24262B] text-white px-10 py-10 leading-8 text-2xl'>
+        <h2 className='text-center '>Pored firme Ganjgo line u našem centru nalaze se još tri firme.</h2>
+        <div className='grid grid-cols-2 gap-6 py-10 text-xl'>
+          <div className='col-span-2 bg-[#242D5D] rounded-xl p-8'>
+            <p>
+              2004. godine registruje se firma Autocentar Ganjgo d.o.o. gdje se vežu za „jako“ ime u automobilskoj
+              industriji - HYUNDAI. Autocentar Ganjgo ima i novu dodatnu lokaciju Magistralni put bb, općina Lukavac. U
+              servisu se radi i održavanje i punjenje klimatiziranih sistema u vozilima, reparacija i servisiranje svih
+              vrsta turbina.
+            </p>
+          </div>
+          <div className='col-span-1 bg-[#242D5D] rounded-xl p-8'>
+            <p>
+              Ganjgo Petrol d.o.o. kao prva firma osnovana 1997. godine, koja se bavi prodajom nafte i naftni derivata.
+              Također za naše kupce u sklopu Ganjgo Petrola je i caffe bar.
+            </p>
+          </div>
+          <div className='col-span-1 bg-[#242D5D] rounded-xl p-8'>
+            <p>
+              U sklopu našeg centra posluje i firma Kam i Bus d.o.o. od 2013. godine koja je u vlasništvu Auto Hrvatska
+              d.d. iz Zagreba, koja se bavi prodajom rabljenih privrednih vozila iz teretnog programa i njihovo
+              održavanje.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   )
 }

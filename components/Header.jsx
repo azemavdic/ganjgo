@@ -26,7 +26,7 @@ const Header = ({ children, type, path, classes }) => {
         {/* SLIKA */}
         {type === 'image' && (
           <div className={`absolute left-0 z-0 w-full h-full -top-10 2xl:top-0 object-fit contain ${classes}`}>
-            <Image src={path} width='6239' height='3167' alt='o nama' />
+            <Image src={path} width='6239' height='3167' alt={path} />
           </div>
         )}
 
