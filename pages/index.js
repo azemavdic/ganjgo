@@ -41,7 +41,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <header className='relative h-[500px] xl:h-screen overflow-hidden '>
-        <div className='bg-[#0219AC]/40 h-full w-full absolute left-0 top-0 opacity-100 z-10'></div>
+        <div className='bg-[#0219AC]/20 h-full w-full absolute left-0 top-0 opacity-100 z-10'></div>
         <div className='bg-gradient-to-r from-[#0219AC] to-[#2D63F6] h-full w-full absolute left-0 top-0 opacity-100'></div>
         <video
           className='absolute z-0 w-auto h-auto min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2 top-[45%] left-1/2'
