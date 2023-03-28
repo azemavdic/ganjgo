@@ -78,15 +78,15 @@ export default function Home() {
           </nav>
 
           {/* TEXT */}
-          <div className='z-20 flex flex-col items-center justify-center p-20 2xl:mt-36'>
+          <div className='z-20 flex flex-col items-center justify-center p-20 '>
             <div className='w-1/2 text-center space-y-9'>
-              <h2 className='text-4xl font-bold tracking-wider 2xl:text-6xl'>
+              <h2 className='text-4xl font-bold tracking-wider 2xl:text-5xl'>
                 Dobro došli na web stranicu Ganjgo line d.o.o.
               </h2>
-              <p className='text-lg font-semibold tracking-wider 2xl:text-3xl'>
+              <p className='text-lg font-semibold tracking-wider 2xl:text-2xl'>
                 Na našem tehničkom pregledu dočekaće Vas stručno i ljubazno osoblje sa vrhunskom kvalitetom usluge
               </p>
-              <button className='px-8 py-2 bg-gradient-to-r from-[#0219AC] to-[#2D63F6] rounded-full uppercase 2xl:text-2xl 2xl:font-semibold 2xl:px-12 2xl:py-6'>
+              <button className='px-8 py-2 bg-gradient-to-r from-[#0219AC] to-[#2D63F6] rounded-full uppercase 2xl:text-xl 2xl:font-semibold 2xl:px-10 2xl:py-4'>
                 Kontakt
               </button>
             </div>
