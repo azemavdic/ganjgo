@@ -5,31 +5,10 @@ import Image from 'next/image'
 import { BsSearch } from 'react-icons/bs'
 import { useRouter } from 'next/router'
 import ActiveLink from '@/components/ActiveLink'
+import Navbar from '@/components/Navbar'
+import Header from '@/components/Header'
 
 const acme = Acme({ subsets: ['latin'], weight: '400' })
-
-export const navigationMenu = [
-  {
-    id: 1,
-    name: 'Početna',
-    path: '/',
-  },
-  {
-    id: 2,
-    name: 'O nama',
-    path: '/o_nama',
-  },
-  {
-    id: 3,
-    name: 'Usluge',
-    path: '/usluge',
-  },
-  {
-    id: 4,
-    name: 'Galerija',
-    path: '/galerija',
-  },
-]
 
 export default function Home() {
   return (
@@ -40,44 +19,8 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <header className='relative h-[500px] xl:h-screen overflow-hidden '>
-        <div className='absolute top-0 left-0 z-10 w-full h-full opacity-100 bg-slate-50/20'></div>
-        <div className='bg-gradient-to-r from-[#0219AC] to-[#2D63F6] h-full w-full absolute left-0 top-0 opacity-100'></div>
-        <video
-          className='absolute z-0 w-auto h-auto min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2 top-[45%] left-1/2'
-          // className='absolute top-0 left-0 z-0 w-full h-full object-fit contain'
-          autoPlay
-          loop
-          muted
-          playsInline
-        >
-          <source src='/ganjgolineweb1.mp4' type='video/mp4' />
-        </video>
-
-        <div className='relative z-10 text-white'>
-          {/* NAVBAR */}
-          <nav className='container mx-auto'>
-            <div className='flex items-center justify-around mr-16'>
-              <Link href='/' className=''>
-                <Image src='/images/logo.png' alt='logo' width='300' height='300' />
-              </Link>
-
-              <div className='space-x-4 '>
-                {navigationMenu.map((el) => (
-                  <ActiveLink href={el.path} key={el.id} className='text-xl font-semibold'>
-                    {el.name}
-                  </ActiveLink>
-                ))}
-              </div>
-
-              <div className='flex items-center justify-center space-x-6'>
-                <BsSearch size={25} />
-                <button className='px-8 py-2 bg-gradient-to-r from-[#0219AC] to-[#2D63F6] rounded-full'>Kontakt</button>
-              </div>
-            </div>
-          </nav>
-
-          {/* TEXT */}
+      <Header type='video' path='/ganjgolineweb1.mp4'>
+        <Navbar>
           <div className='z-20 flex flex-col items-center justify-center p-20 '>
             <div className='w-1/2 text-center space-y-9'>
               <h2 className='text-4xl font-bold tracking-wider 2xl:text-5xl'>
@@ -91,8 +34,8 @@ export default function Home() {
               </button>
             </div>
           </div>
-        </div>
-      </header>
+        </Navbar>
+      </Header>
     </>
   )
 }
