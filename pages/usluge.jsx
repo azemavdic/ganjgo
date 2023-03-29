@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar'
 import Head from 'next/head'
 import Image from 'next/image'
 import React, { useState } from 'react'
-import { BsBagCheck } from 'react-icons/bs'
+import { BsBagCheck, BsTruck } from 'react-icons/bs'
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
 
 const vrsteUsluge = [
@@ -161,7 +161,7 @@ const Usluge = () => {
               <div className='p-4 text-rose-600 rounded-full bg-[#393e4e]'>
                 <el.Icon size={30} />
               </div>
-              <h2 className='text-2xl font-bold'>{el.title}</h2>
+              <h2 className='text-xl font-bold'>{el.title}</h2>
               <p>{el.text}</p>
             </div>
           ))}
@@ -374,6 +374,112 @@ const Usluge = () => {
               <Image src='/images/tehnicki_pregled.jpg' alt='tehnicki_pregled' width={1500} height={1000} />
             </div>
             <div></div>
+          </div>
+        </section>
+      )}
+
+      {/* TRANSPORT */}
+      {(activeButton === 1 || activeButton === 7) && (
+        <section className='bg-[#171B29] text-white 2xl:px-40 px-20 py-5 leading-8 text-2xl text-center'>
+          <h2 className='mt-10 mb-5 text-4xl font-bold'>Transport</h2>
+          <div className='grid grid-cols-5 gap-5 mt-20 mb-14 justify-items-center place-items-start'>
+            <div className='flex flex-col items-center justify-center'>
+              <div className='p-4 text-indigo-500 rounded-full bg-[#393e4e]'>
+                <BsTruck size={30} />
+              </div>
+              <h2 className='text-xl font-bold'>Kompletni transport do 105 m3</h2>
+            </div>
+
+            <div className='flex flex-col items-center justify-center'>
+              <div className='p-4 text-indigo-500 rounded-full bg-[#393e4e]'>
+                <BsTruck size={30} />
+              </div>
+              <h2 className='text-xl font-bold'>Djelimični transport</h2>
+            </div>
+
+            <div className='flex flex-col items-center justify-center'>
+              <div className='p-4 text-indigo-500 rounded-full bg-[#393e4e]'>
+                <BsTruck size={30} />
+              </div>
+              <h2 className='text-xl font-bold'>Dotovari</h2>
+            </div>
+
+            <div className='flex flex-col items-center justify-center'>
+              <div className='p-4 text-indigo-500 rounded-full bg-[#393e4e]'>
+                <BsTruck size={30} />
+              </div>
+              <h2 className='text-xl font-bold'>ADR transporti roba</h2>
+            </div>
+
+            <div className='flex flex-col items-center justify-center'>
+              <div className='p-4 text-indigo-500 rounded-full bg-[#393e4e]'>
+                <BsTruck size={30} />
+              </div>
+              <h2 className='text-xl font-bold'>Transport polovnih i novih auta</h2>
+            </div>
+          </div>
+          <h2>Usluge transporta na relacijama</h2>
+
+          <div className='grid grid-cols-6 gap-10 mt-10 mb-14 justify-items-center place-items-start'>
+            <div className='flex flex-col items-center justify-center space-y-3'>
+              <Image src='/images/icons/germany.png' alt='germany' width={50} height={50} />
+              <p>Njemačka</p>
+            </div>
+
+            <div className='flex flex-col items-center justify-center space-y-3'>
+              <Image src='/images/icons/netherlands.png' alt='netherlands' width={50} height={50} />
+              <p>Holandija</p>
+            </div>
+
+            <div className='flex flex-col items-center justify-center space-y-3'>
+              <Image src='/images/icons/belgium.png' alt='belgium' width={50} height={50} />
+              <p>Belgija</p>
+            </div>
+
+            <div className='flex flex-col items-center justify-center space-y-3'>
+              <Image src='/images/icons/france.png' alt='france' width={50} height={50} />
+              <p>Francuska</p>
+            </div>
+
+            <div className='flex flex-col items-center justify-center space-y-3'>
+              <Image src='/images/icons/spain.png' alt='spain' width={50} height={50} />
+              <p>Španija</p>
+            </div>
+
+            <div className='flex flex-col items-center justify-center space-y-3'>
+              <Image src='/images/icons/italy.png' alt='italy' width={50} height={50} />
+              <p>Italija</p>
+            </div>
+
+            <div className='flex flex-col items-center justify-center space-y-3'>
+              <Image src='/images/icons/czech-republic.png' alt='czech-republic' width={50} height={50} />
+              <p>Češka</p>
+            </div>
+
+            <div className='flex flex-col items-center justify-center space-y-3'>
+              <Image src='/images/icons/croatia.png' alt='croatia' width={50} height={50} />
+              <p>Hrvatska</p>
+            </div>
+
+            <div className='flex flex-col items-center justify-center space-y-3'>
+              <Image src='/images/icons/serbia.png' alt='serbia' width={50} height={50} />
+              <p>Srbija</p>
+            </div>
+
+            <div className='flex flex-col items-center justify-center space-y-3'>
+              <Image src='/images/icons/slovenia.png' alt='slovenia' width={50} height={50} />
+              <p>Slovenija</p>
+            </div>
+
+            <div className='flex flex-col items-center justify-center space-y-3'>
+              <Image src='/images/icons/switz.png' alt='switz' width={50} height={50} />
+              <p>Švicarska</p>
+            </div>
+
+            <div className='flex flex-col items-center justify-center space-y-3'>
+              <Image src='/images/icons/poland.png' alt='poland' width={50} height={50} />
+              <p>Poljska</p>
+            </div>
           </div>
         </section>
       )}
