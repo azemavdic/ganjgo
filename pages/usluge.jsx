@@ -25,6 +25,9 @@ const Usluge = () => {
           </div>
         </Navbar>
       </Header>
+
+      {/* SVE USLUGE */}
+      <section className='bg-[#171B29] text-white px-10 py-14 text-lg leading-8'></section>
     </>
   )
 }
