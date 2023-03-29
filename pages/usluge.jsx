@@ -277,36 +277,36 @@ const Usluge = () => {
                 Pregled ispitivanja iz oblasti certificiranja iz oblasti certificiranja, prema članku 5. Pravilnika,
                 obuhvaćaju sljedeće vrste ispitivanja i certificiranja:
               </h2>
-              <div className='grid grid-cols-4 gap-6 justify-items-center place-items-start'>
+              <div className='grid grid-cols-4 gap-6 justify-items-center place-items-start 2xl:gap-12'>
                 <div className='flex flex-col items-center justify-center space-y-3'>
                   <span className='text-indigo-500 rounded-full bg-[#393e4e] w-12 h-12 text-center pt-2'>1</span>
-                  <span className='text-lg font-semibold'>Identifikacija vozila.</span>
+                  <span className='text-lg font-semibold 2xl:px-20'>Identifikacija vozila.</span>
                 </div>
 
                 <div className='flex flex-col items-center justify-center space-y-3'>
                   <span className='text-indigo-500 rounded-full bg-[#393e4e] w-12 h-12 text-center pt-2'>2</span>
-                  <span className='text-lg font-semibold text-center'>
+                  <span className='text-lg font-semibold text-center 2xl:px-20'>
                     Namjenske prepravke i rekonstrukcije vozila.
                   </span>
                 </div>
 
                 <div className='flex flex-col items-center justify-center space-y-3'>
                   <span className='text-indigo-500 rounded-full bg-[#393e4e] w-12 h-12 text-center pt-2'>3</span>
-                  <span className='text-lg font-semibold text-center'>
+                  <span className='text-lg font-semibold text-center 2xl:px-20'>
                     Ugradnja novih sklopova, uređaja i opreme za vozila.
                   </span>
                 </div>
 
                 <div className='flex flex-col items-center justify-center space-y-3'>
                   <span className='text-indigo-500 rounded-full bg-[#393e4e] w-12 h-12 text-center pt-2'>4</span>
-                  <span className='text-lg font-semibold text-center'>
+                  <span className='text-lg font-semibold text-center 2xl:px-20'>
                     Rekonstrukcija vozila sa pogonom motora na alternativna goriva.
                   </span>
                 </div>
 
                 <div className='flex flex-col items-center justify-center col-span-2 space-y-3'>
                   <span className='text-indigo-500 rounded-full bg-[#393e4e] w-12 h-12 text-center pt-2'>5</span>
-                  <span className='text-lg font-semibold text-center'>
+                  <span className='text-lg font-semibold text-center 2xl:px-36'>
                     Certificiranje vozila za prijevoz opasnih materija u skladu sa međunarodnim sporazumom o prijevozu
                     opasnih materija ADR.
                   </span>
@@ -314,7 +314,7 @@ const Usluge = () => {
 
                 <div className='flex flex-col items-center justify-center col-span-2 space-y-3'>
                   <span className='text-indigo-500 rounded-full bg-[#393e4e] w-12 h-12 text-center pt-2'>6</span>
-                  <span className='text-lg font-semibold text-center'>
+                  <span className='text-lg font-semibold text-center 2xl:px-36'>
                     Certificiranje vozila za prijevoz lako kvarljive robe u skladu sa međunarodnim sporazumom o
                     prijevozu lako kvarljive robe ADP.
                   </span>
@@ -322,7 +322,7 @@ const Usluge = () => {
 
                 <div className='flex flex-col items-center justify-center col-start-2 col-end-4 space-y-3'>
                   <span className='text-indigo-500 rounded-full bg-[#393e4e] w-12 h-12 text-center pt-2'>7</span>
-                  <span className='text-lg font-semibold text-center'>
+                  <span className='text-lg font-semibold text-center 2xl:px-36'>
                     Certificiranje novih konstrukcija i pojedinačno proizvedenih vozila.
                   </span>
                 </div>
