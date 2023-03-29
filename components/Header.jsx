@@ -5,9 +5,13 @@ import Navbar from './Navbar'
 const Header = ({ children, type, path, classes }) => {
   return (
     <>
-      <header className='relative h-[500px] xl:h-screen overflow-hidden'>
-        <div className='absolute top-0 left-0 z-10 w-full h-full opacity-100 bg-slate-50/20'></div>
-        <div className='bg-gradient-to-r from-[#0219AC] to-[#2D63F6] h-full w-full absolute left-0 top-0 opacity-100'></div>
+      <header className={`relative overflow-hidden ${type !== '' ? ' h-[500px] xl:h-screen' : 'bg-[#24262B]'}`}>
+        {type !== '' && (
+          <>
+            <div className='absolute top-0 left-0 z-10 w-full h-full opacity-100 bg-slate-50/20'></div>
+            <div className='bg-gradient-to-r from-[#0219AC] to-[#2D63F6] h-full w-full absolute left-0 top-0 opacity-100'></div>
+          </>
+        )}
 
         {/* VIDEO */}
         {type === 'video' && (

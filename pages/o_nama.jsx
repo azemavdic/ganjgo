@@ -40,7 +40,7 @@ const About = () => {
           Španije...
         </p>
         <div className='grid grid-cols-3 grid-rows-3 gap-6 mt-8'>
-          <div className='col-span-2 row-span-2'>
+          {/* <div className='col-span-2 row-span-2'>
             <Image width={2000} height={1000} src='/slike/Placement_Area_ASSETsmallSIZED.png' alt='homologacija' />
           </div>
           <div className='col-span-1'>
@@ -60,6 +60,51 @@ const About = () => {
           </div>
           <div className='col-span-2 row-span-1'>
             <Image width={2000} height={1000} src='/slike/Placement_Area_ASSETsmallSIZED_bz.png' alt='ulaz' />
+          </div> */}
+          <div className='col-span-2 row-span-2'>
+            <Image
+              width={2000}
+              height={1000}
+              src='/images/homologacija.jpg'
+              alt='homologacija'
+              className='object-cover min-h-full'
+            />
+          </div>
+          <div className='col-span-1'>
+            <Image width={2000} height={1000} src='/images/3_auta.jpg' alt='3_auta' />
+          </div>
+          <div className='col-span-1 row-span-2'>
+            <Image
+              width={2000}
+              height={1000}
+              src='/images/popravak.jpg'
+              alt='popravak'
+              className='object-cover min-h-full'
+            />
+          </div>
+          <div className='col-span-1'>
+            <Image
+              width={1000}
+              height={1000}
+              src='/images/benzinska.jpg'
+              alt='benzinska'
+              className='object-cover min-h-full'
+            />
+          </div>
+          <div className='col-span-1'>
+            <Image width={1000} height={1000} src='/images/auto.jpg' alt='auto' className='object-cover min-h-full' />
+          </div>
+          <div className='col-span-1'>
+            <Image
+              width={1000}
+              height={300}
+              src='/images/vatrogasno.jpg'
+              alt='vatrogasno'
+              className='object-cover min-h-full'
+            />
+          </div>
+          <div className='col-span-2 '>
+            <Image width={1300} height={1000} src='/images/ulaz.jpg' alt='ulaz' className='object-cover min-h-full' />
           </div>
         </div>
       </section>
