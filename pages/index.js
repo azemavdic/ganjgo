@@ -1,16 +1,13 @@
 import Head from 'next/head'
 import { Inter, Roboto, Acme } from 'next/font/google'
-import Link from 'next/link'
-import Image from 'next/image'
-import { BsSearch } from 'react-icons/bs'
-import { useRouter } from 'next/router'
-import ActiveLink from '@/components/ActiveLink'
 import Navbar from '@/components/Navbar'
 import Header from '@/components/Header'
+import { useRouter } from 'next/router'
 
 const acme = Acme({ subsets: ['latin'], weight: '400' })
 
 export default function Home() {
+  const router = useRouter()
   return (
     <>
       <Head>
@@ -29,7 +26,10 @@ export default function Home() {
               <p className='text-lg font-semibold tracking-wider 2xl:text-2xl'>
                 Na našem tehničkom pregledu dočekaće Vas stručno i ljubazno osoblje sa vrhunskom kvalitetom usluge
               </p>
-              <button className='px-8 py-2 bg-gradient-to-r from-[#0219AC] to-[#2D63F6] rounded-full uppercase 2xl:text-xl 2xl:font-semibold 2xl:px-10 2xl:py-4'>
+              <button
+                onClick={() => router.push('/kontakt')}
+                className='px-8 py-2 bg-gradient-to-r from-[#0219AC] to-[#2D63F6] rounded-full uppercase 2xl:text-xl 2xl:font-semibold 2xl:px-10 2xl:py-4'
+              >
                 Kontakt
               </button>
             </div>

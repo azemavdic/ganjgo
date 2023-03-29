@@ -47,7 +47,9 @@ const Navbar = ({ children }) => {
 
           <div className='flex items-center justify-center space-x-6'>
             <BsSearch size={25} />
-            <button className='px-8 py-2 bg-gradient-to-r from-[#0219AC] to-[#2D63F6] rounded-full'>Kontakt</button>
+            <Link href='/kontakt' className='px-8 py-2 bg-gradient-to-r from-[#0219AC] to-[#2D63F6] rounded-full'>
+              Kontakt
+            </Link>
           </div>
         </div>
       </nav>
