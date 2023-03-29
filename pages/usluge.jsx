@@ -2,6 +2,46 @@ import Header from '@/components/Header'
 import Navbar from '@/components/Navbar'
 import Head from 'next/head'
 import React from 'react'
+import { BsBagCheck } from 'react-icons/bs'
+
+export const vrsteUsluge = [
+  {
+    id: 1,
+    Icon: BsBagCheck,
+    title: 'Tehnički pregled',
+    text: 'Na našem tehničkom pregledu dočekat će vas stručno i ljubazno osoblje sa vrhunskom kvalitetom usluge.',
+  },
+  {
+    id: 2,
+    Icon: BsBagCheck,
+    title: 'Homologacija',
+    text: 'Homologacija vozila je postupak potvrđivanja ocjene usklađenosti vozila sa zahtjevima propisa o homologaciji.',
+  },
+  {
+    id: 3,
+    Icon: BsBagCheck,
+    title: 'Certifikacija',
+    text: 'Člankom 206. Zakona o osnovama sigurnosti prometa na cestama u BiH ("Službeni glasnik BiH", broj 6/06, 75/06)',
+  },
+  {
+    id: 4,
+    Icon: BsBagCheck,
+    title: 'Tahografi',
+    text: 'U Ganjgo line doo - RADIONICI ZA TAHOGRAFE nudimo Vam: baždarenje (ispitivanje) svih vrsta analognih...',
+  },
+  {
+    id: 5,
+    Icon: BsBagCheck,
+    title: 'Vatrogasni aparati',
+    text: 'U sklopu našeg objekta posjedujemo savremenu radionicu za servisiranje i baždarenje vatrogasnih aparata.',
+  },
+  {
+    id: 6,
+    Icon: BsBagCheck,
+    title: 'Transport',
+    text: 'Vrste transporta: Kompletni transport do 105 m3; Djelomični transport; Dotovari; ADR transporti roba.',
+  },
+]
 
 const Usluge = () => {
   return (
@@ -27,7 +67,19 @@ const Usluge = () => {
       </Header>
 
       {/* SVE USLUGE */}
-      <section className='bg-[#171B29] text-white px-10 py-14 text-lg leading-8'></section>
+      <section className='bg-[#171B29] text-white px-16 py-14 text-lg leading-8'>
+        <div className='grid grid-cols-3 gap-16 justify-items-center'>
+          {vrsteUsluge.map((el) => (
+            <div className='flex flex-col items-center space-y-5 text-center 2xl:w-1/2' key={el.id}>
+              <div className='p-4 text-rose-600 rounded-full bg-[#393e4e] '>
+                <el.Icon size={30} />
+              </div>
+              <h2 className='text-2xl font-bold'>{el.title}</h2>
+              <p>{el.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
     </>
   )
 }
