@@ -331,6 +331,34 @@ const Usluge = () => {
           </div>
         </section>
       )}
+
+      {/* TAHOGRAFI */}
+      {(activeButton === 1 || activeButton === 5) && (
+        <section className='bg-[#171B29] text-white px-5 py-5 leading-8 text-2xl text-center'>
+          <h2 className='mt-10 mb-5 text-4xl font-bold'>Tahografi</h2>
+          <p>U Ganjgo-line doo - RADIONICI ZA TAHOGRAFE nudimo Vam</p>
+          <div className='grid grid-cols-12 gap-6 p-10'>
+            <div className='bg-[#0219AC] p-6 col-start-3 col-end-7 flex items-center justify-center'>
+              <p>Baždarenje (ispitivanje) svih vrsta analognih i digitalnih tahografa</p>
+            </div>
+            <div className='bg-[#0219AC] p-6 col-start-7 col-end-11 flex items-center justify-center'>
+              <p>Najkvalitetnije i najpovoljnije servisiranje tahografa navedenih proizvođača</p>
+            </div>
+            <div className='bg-[#0219AC] p-6 col-start-3 col-end-7 flex items-center justify-center'>
+              <p>Ugradnju svih vrsta tahografa</p>
+            </div>
+            <div className='bg-[#0219AC] p-6 col-start-7 col-end-11 flex items-center justify-center'>
+              <p>Preuzimanje podataka sa memorijskih kartica i memorije digitalnih tahografa</p>
+            </div>
+          </div>
+          <div className='mb-10'>
+            <h2 className='mt-10 mb-5 text-3xl font-bold'>
+              NOVO U PONUDI I MEĐU PRVIM U BIH BAŽDARENJE PAMETNIH- SMART TAHOGRAFA
+            </h2>
+            <p>Za sve naše klijente vršimo usluge BESPLATNO preuzimanja podataka sa tahografa i vozačkih kartica</p>
+          </div>
+        </section>
+      )}
     </>
   )
 }
