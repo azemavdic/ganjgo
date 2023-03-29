@@ -359,6 +359,24 @@ const Usluge = () => {
           </div>
         </section>
       )}
+
+      {/* TEHNIČKI PREGLED */}
+      {(activeButton === 1 || activeButton === 6) && (
+        <section className='bg-[#24262B] text-white px-5 py-5 leading-8 text-2xl transition-all duration-300'>
+          <div className='flex items-center justify-between gap-6 p-2'>
+            <div className='w-3/5 space-y-5 2xl:p-12'>
+              <h2 className='text-4xl font-bold text-center'>Vatrogasni aparati</h2>
+              <p className='text-xl font-semibold text-gray-400'>
+                U sklopu našeg objekta posjedujemo savremenu radionicu za servisiranje i baždarenje vatrogasnih aparata.
+              </p>
+            </div>
+            <div className=''>
+              <Image src='/images/tehnicki_pregled.jpg' alt='tehnicki_pregled' width={1500} height={1000} />
+            </div>
+            <div></div>
+          </div>
+        </section>
+      )}
     </>
   )
 }
