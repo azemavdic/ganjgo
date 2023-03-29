@@ -240,7 +240,7 @@ const Usluge = () => {
       )}
 
       {/* CERTIFIKACIJA */}
-      {(activeButton === 1 || activeButton === 3) && (
+      {(activeButton === 1 || activeButton === 4) && (
         <section className='bg-[#24262B] text-white px-5 py-5 leading-8 text-2xl transition-all duration-300'>
           <div className='flex items-center justify-between gap-6 p-2'>
             <div className='w-3/5 space-y-5 2xl:p-12'>
