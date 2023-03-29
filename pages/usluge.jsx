@@ -418,7 +418,7 @@ const Usluge = () => {
               <h2 className='text-xl font-bold'>Transport polovnih i novih auta</h2>
             </div>
           </div>
-          <h2>Usluge transporta na relacijama</h2>
+          <h2 className='py-6'>Usluge transporta na relacijama</h2>
 
           <div className='grid grid-cols-6 gap-10 mt-10 mb-14 justify-items-center place-items-start'>
             <div className='flex flex-col items-center justify-center space-y-3'>
