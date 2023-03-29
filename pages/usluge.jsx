@@ -1,10 +1,11 @@
 import Header from '@/components/Header'
 import Navbar from '@/components/Navbar'
 import Head from 'next/head'
-import React from 'react'
+import Image from 'next/image'
+import React, { useState } from 'react'
 import { BsBagCheck } from 'react-icons/bs'
 
-export const vrsteUsluge = [
+const vrsteUsluge = [
   {
     id: 1,
     Icon: BsBagCheck,
@@ -43,7 +44,45 @@ export const vrsteUsluge = [
   },
 ]
 
+const buttons = [
+  {
+    id: 1,
+    title: 'Prikaži sve',
+  },
+  {
+    id: 2,
+    title: 'Tehnički pregled',
+  },
+  {
+    id: 3,
+    title: 'Homologacija',
+  },
+  {
+    id: 4,
+    title: 'Certifikacija',
+  },
+  {
+    id: 5,
+    title: 'Tahografi',
+  },
+  {
+    id: 6,
+    title: 'Vatrogasni aparati',
+  },
+  {
+    id: 7,
+    title: 'Transport',
+  },
+]
+
 const Usluge = () => {
+  const [activeButton, setActiveButton] = useState(1)
+  const [activePanel, setActivePanel] = useState(null)
+
+  function handleClickButton(buttonId) {
+    setActiveButton(buttonId)
+  }
+
   return (
     <>
       <Head>
@@ -67,7 +106,7 @@ const Usluge = () => {
       </Header>
 
       {/* SVE USLUGE */}
-      <section className='bg-[#171B29] text-white px-16 py-14 text-lg leading-8'>
+      <section className='bg-[#171B29] text-white px-16 pt-14 text-lg leading-8'>
         <div className='grid grid-cols-3 gap-16 justify-items-center'>
           {vrsteUsluge.map((el) => (
             <div className='flex flex-col items-center space-y-5 text-center 2xl:w-1/2' key={el.id}>
@@ -79,7 +118,59 @@ const Usluge = () => {
             </div>
           ))}
         </div>
+        <div className='flex items-center justify-center gap-5 pb-5 mt-20 text-sm text-gray-500 transition-all duration-300 2xl:text-xl'>
+          {buttons.map((el) => (
+            <button
+              key={el.id}
+              onClick={() => handleClickButton(el.id)}
+              className={el.id === activeButton && 'text-white'}
+            >
+              {el.title}
+            </button>
+          ))}
+        </div>
       </section>
+
+      {/* TEHNIČKI PREGLED */}
+      {(activeButton === 1 || activeButton === 2) && (
+        <section className='bg-[#24262B] text-white px-5 py-5 leading-8 text-2xl transition-all duration-300'>
+          <div className='flex items-center justify-between gap-6 p-2'>
+            <div className='w-3/5 space-y-5 2xl:p-12'>
+              <h2 className='text-4xl font-bold text-center'>Tehnički pregled</h2>
+              <p className='text-xl font-semibold'>
+                Na našem tehničkom pregledu dočekat će vas stručno i ljubazno osoblje sa vrhunskom kvalitetom
+                usluge.Nudimo sve vrste tehničkog pregleda: putnička vozila teretna, priključna, autobusi, radna vozila,
+                radne mašine...
+              </p>
+            </div>
+            <div className=''>
+              <Image src='/images/tehnicki_pregled.jpg' alt='tehnicki_pregled' width={1500} height={1000} />
+            </div>
+            <div></div>
+          </div>
+        </section>
+      )}
+
+      {/* HOMOLOGACIJA */}
+      {(activeButton === 1 || activeButton === 3) && (
+        <section className='bg-[#171B29] text-white px-5 py-5 leading-8 text-2xl'>
+          <div className='flex flex-row-reverse items-center justify-between gap-6 p-2'>
+            <div className='w-3/5 space-y-5 2xl:p-12'>
+              <h2 className='text-4xl font-bold text-center'>Homologacija</h2>
+              <p className='text-xl font-semibold'>
+                Homologacija vozila je postupak potvrđivanja ocjene usklađenosti vozila sa zahtjevima propisa o
+                homologaciji koji se primjenjuju u Bosni i Hercegovini. Drugim riječima, homologacija vozila predstavlja
+                provjeru bitnih sklopova vozila, koji direktno ili indirektno utiču na okoliš i sigurnost putnika (npr.
+                motor, kočnice, buka, sigurnosni pojasevi itd.).
+              </p>
+            </div>
+            <div className=''>
+              <Image src='/images/tehnicki_pregled.jpg' alt='tehnicki_pregled' width={1500} height={1000} />
+            </div>
+            <div></div>
+          </div>
+        </section>
+      )}
     </>
   )
 }
