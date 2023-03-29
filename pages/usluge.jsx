@@ -158,7 +158,7 @@ const Usluge = () => {
         <div className='grid grid-cols-3 gap-16 justify-items-center'>
           {vrsteUsluge.map((el) => (
             <div className='flex flex-col items-center space-y-5 text-center 2xl:w-1/2' key={el.id}>
-              <div className='p-4 text-rose-600 rounded-full bg-[#393e4e] '>
+              <div className='p-4 text-rose-600 rounded-full bg-[#393e4e]'>
                 <el.Icon size={30} />
               </div>
               <h2 className='text-2xl font-bold'>{el.title}</h2>
@@ -185,7 +185,7 @@ const Usluge = () => {
           <div className='flex items-center justify-between gap-6 p-2'>
             <div className='w-3/5 space-y-5 2xl:p-12'>
               <h2 className='text-4xl font-bold text-center'>Tehnički pregled</h2>
-              <p className='text-xl font-semibold'>
+              <p className='text-xl font-semibold text-gray-400'>
                 Na našem tehničkom pregledu dočekat će vas stručno i ljubazno osoblje sa vrhunskom kvalitetom
                 usluge.Nudimo sve vrste tehničkog pregleda: putnička vozila teretna, priključna, autobusi, radna vozila,
                 radne mašine...
@@ -205,7 +205,7 @@ const Usluge = () => {
           <div className='flex flex-row-reverse items-center justify-between gap-6 p-2'>
             <div className='w-3/5 space-y-5 2xl:p-12'>
               <h2 className='text-4xl font-bold text-center'>Homologacija</h2>
-              <p className='text-xl font-semibold'>
+              <p className='text-xl font-semibold text-gray-400'>
                 Homologacija vozila je postupak potvrđivanja ocjene usklađenosti vozila sa zahtjevima propisa o
                 homologaciji koji se primjenjuju u Bosni i Hercegovini. Drugim riječima, homologacija vozila predstavlja
                 provjeru bitnih sklopova vozila, koji direktno ili indirektno utiču na okoliš i sigurnost putnika (npr.
@@ -227,7 +227,7 @@ const Usluge = () => {
                   {activePanels.includes(panel.id) ? <FaChevronUp /> : <FaChevronDown />}
                 </button>
                 <div
-                  className={`transition-all duration-300 px-36 ease-in-out overflow-hidden text-lg ${
+                  className={`transition-all duration-300 px-36 ease-in-out overflow-hidden text-gray-400 text-lg ${
                     activePanels.includes(panel.id) ? 'max-h-screen py-5' : 'max-h-0'
                   }`}
                 >
@@ -235,6 +235,99 @@ const Usluge = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+      )}
+
+      {/* CERTIFIKACIJA */}
+      {(activeButton === 1 || activeButton === 3) && (
+        <section className='bg-[#24262B] text-white px-5 py-5 leading-8 text-2xl transition-all duration-300'>
+          <div className='flex items-center justify-between gap-6 p-2'>
+            <div className='w-3/5 space-y-5 2xl:p-12'>
+              <h2 className='text-4xl font-bold text-center'>Certifikacija</h2>
+              <p className='text-xl font-semibold text-gray-400'>
+                Člankom 206. Zakona o osnovama sigurnosti prometa na cestama u BiH („Službeni glasnik BiH“, broj 6/06.,
+                75/06. i 44/07.), propisano je da motorna i priključna vozila koja se pojedinačno proizvode,
+                prepravljaju ili popravljaju u većem obimu ili su im oštećeni sklopovi i uređaji značajni za sigurno
+                sudjelovanje u prometu na cestama prije puštanja u promet, moraju biti podvrgnuta ocjenjivanju
+                usklađenosti konstrukcijskih i sigurnosnih karakteristika s odgovarajućim važećim propisima u BiH i na
+                osnovu pozitivnih rezultata izdaje se uvjerenje (certifikat).
+              </p>
+            </div>
+            <div className=''>
+              <Image src='/images/tehnicki_pregled.jpg' alt='tehnicki_pregled' width={1500} height={1000} />
+            </div>
+          </div>
+
+          <div className='py-10 mt-6 px-36'>
+            <div className='mb-6 space-y-6'>
+              <h2>
+                Kako je novost ovakav oblik organizacije na bosanskohercegovačkom tlu, pojašnjavamo što zapravo radi
+                organizacija prilikom provedbe procesa certificiranja.
+              </h2>
+              <p className='text-xl font-semibold text-gray-400'>
+                Prema navedenom Zakonu ocjenjivanje usklađenosti obavlja organizacija za certificiranje vozila, a skladu
+                sa Pravilnikom o certificiranju vozila i uvjetima koje organizacije za certificiranje vozila moraju
+                ispuniti („Službeni glasnik BiH“ broj 41/08).
+              </p>
+            </div>
+            {/* BROJEVI */}
+            <div className='space-y-12'>
+              <h2>
+                Pregled ispitivanja iz oblasti certificiranja iz oblasti certificiranja, prema članku 5. Pravilnika,
+                obuhvaćaju sljedeće vrste ispitivanja i certificiranja:
+              </h2>
+              <div className='grid grid-cols-4 gap-6 justify-items-center place-items-start'>
+                <div className='flex flex-col items-center justify-center space-y-3'>
+                  <span className='text-indigo-500 rounded-full bg-[#393e4e] w-12 h-12 text-center pt-2'>1</span>
+                  <span className='text-lg font-semibold'>Identifikacija vozila.</span>
+                </div>
+
+                <div className='flex flex-col items-center justify-center space-y-3'>
+                  <span className='text-indigo-500 rounded-full bg-[#393e4e] w-12 h-12 text-center pt-2'>2</span>
+                  <span className='text-lg font-semibold text-center'>
+                    Namjenske prepravke i rekonstrukcije vozila.
+                  </span>
+                </div>
+
+                <div className='flex flex-col items-center justify-center space-y-3'>
+                  <span className='text-indigo-500 rounded-full bg-[#393e4e] w-12 h-12 text-center pt-2'>3</span>
+                  <span className='text-lg font-semibold text-center'>
+                    Ugradnja novih sklopova, uređaja i opreme za vozila.
+                  </span>
+                </div>
+
+                <div className='flex flex-col items-center justify-center space-y-3'>
+                  <span className='text-indigo-500 rounded-full bg-[#393e4e] w-12 h-12 text-center pt-2'>4</span>
+                  <span className='text-lg font-semibold text-center'>
+                    Rekonstrukcija vozila sa pogonom motora na alternativna goriva.
+                  </span>
+                </div>
+
+                <div className='flex flex-col items-center justify-center col-span-2 space-y-3'>
+                  <span className='text-indigo-500 rounded-full bg-[#393e4e] w-12 h-12 text-center pt-2'>5</span>
+                  <span className='text-lg font-semibold text-center'>
+                    Certificiranje vozila za prijevoz opasnih materija u skladu sa međunarodnim sporazumom o prijevozu
+                    opasnih materija ADR.
+                  </span>
+                </div>
+
+                <div className='flex flex-col items-center justify-center col-span-2 space-y-3'>
+                  <span className='text-indigo-500 rounded-full bg-[#393e4e] w-12 h-12 text-center pt-2'>6</span>
+                  <span className='text-lg font-semibold text-center'>
+                    Certificiranje vozila za prijevoz lako kvarljive robe u skladu sa međunarodnim sporazumom o
+                    prijevozu lako kvarljive robe ADP.
+                  </span>
+                </div>
+
+                <div className='flex flex-col items-center justify-center col-start-2 col-end-4 space-y-3'>
+                  <span className='text-indigo-500 rounded-full bg-[#393e4e] w-12 h-12 text-center pt-2'>7</span>
+                  <span className='text-lg font-semibold text-center'>
+                    Certificiranje novih konstrukcija i pojedinačno proizvedenih vozila.
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       )}
