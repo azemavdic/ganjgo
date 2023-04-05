@@ -18,8 +18,8 @@ export default function Home() {
       </Head>
       <Header type='video' path='/ganjgolineweb1.mp4'>
         <Navbar>
-          <div className='z-20 flex flex-col items-center justify-center p-20 '>
-            <div className='w-1/2 text-center space-y-9'>
+          <div className='z-20 flex flex-col items-center justify-center md:p-20 '>
+            <div className='hidden w-1/2 text-center space-y-9 md:block'>
               <h2 className='text-4xl font-bold tracking-wider 2xl:text-5xl'>
                 Dobro došli na web stranicu Ganjgo line d.o.o.
               </h2>
