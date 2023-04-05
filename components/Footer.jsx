@@ -5,7 +5,7 @@ const Footer = () => {
   const date = new Date()
   const currentYear = date.getFullYear()
   return (
-    <footer className='relative z-10 text-white'>
+    <footer className='z-10 text-white'>
       <section className='bg-gradient-to-r from-[#0219AC] to-[#2D63F6] p-4 md:p-8 2xl:p-14'>
         <div className='grid grid-cols-1 gap-9 md:gap-1 md:grid-cols-3 justify-items-center'>
           {/* SOCIAL ICONS */}
