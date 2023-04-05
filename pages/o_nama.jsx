@@ -13,12 +13,12 @@ const About = () => {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Header type='image' path='/images/o_nama.jpg' classes='-top-10 2xl:top-0'>
+      <Header type='image' path='/images/o_nama.jpg' classes='md:-top-10 2xl:top-0'>
         <Navbar>
-          <div className='z-20 flex flex-col items-center justify-center p-20 '>
+          <div className='z-20 flex flex-col items-center justify-center p-10 md:p-20 '>
             <div className='w-1/2 text-center space-y-9'>
               <h2 className='text-4xl font-bold tracking-wider 2xl:text-5xl'>O nama</h2>
-              <p className='text-lg font-semibold tracking-wider 2xl:text-2xl'>
+              <p className='hidden text-lg font-semibold tracking-wider 2xl:text-2xl md:block'>
                 Dolaskom u Ganjgo centar dočekaće Vas stručno i ljubazno osoblje, brza i kvalitetna usluga i povoljne
                 cijene!
               </p>
@@ -28,7 +28,7 @@ const About = () => {
       </Header>
 
       {/* KOLEKCIJA SLIKA */}
-      <section className='bg-[#171B29] text-white px-10 py-14 text-lg leading-8'>
+      <section className='bg-[#171B29] text-white p-5 md:px-10 md:py-14 text-lg leading-8'>
         <p>
           Ganjgo line d.o.o. posluje od 2007. godine sa sjedištem u općini Doboj Jug na adresi 203 brigade br.88
           Matuzići. Osnovna djelatnost naše firme jeste usluge tehničkog pregleda svih vrsta vozila. U sklopu tehničkog
@@ -39,28 +39,7 @@ const About = () => {
           osiguravajuće kuće. Ganjgo line nudi i usluge transporta na lokaciji Njemačke, Francuske, Holandije, Belgije,
           Španije...
         </p>
-        <div className='grid grid-cols-3 grid-rows-3 gap-6 mt-8'>
-          {/* <div className='col-span-2 row-span-2'>
-            <Image width={2000} height={1000} src='/slike/Placement_Area_ASSETsmallSIZED.png' alt='homologacija' />
-          </div>
-          <div className='col-span-1'>
-            <Image width={1000} height={1000} src='/slike/Placement_Area_ASSETsmallSIZED_bn.png' alt='3_auta' />
-          </div>
-          <div className='col-span-1 row-span-2'>
-            <Image width={1000} height={1000} src='/slike/Placement_Area_ASSETsmallSIZED_b.png' alt='popravak' />
-          </div>
-          <div className='col-span-1'>
-            <Image width={1000} height={1000} src='/slike/Placement_Area_ASSETsmallSIZED_bq.png' alt='benzinska' />
-          </div>
-          <div className='col-span-1'>
-            <Image width={1000} height={1000} src='/slike/Placement_Area_ASSETsmallSIZED_bw.png' alt='auto' />
-          </div>
-          <div className='col-span-1'>
-            <Image width={580} height={100} src='/slike/Placement_Area_ASSETsmallSIZED_bt.png' alt='vatrogasno' />
-          </div>
-          <div className='col-span-2 row-span-1'>
-            <Image width={2000} height={1000} src='/slike/Placement_Area_ASSETsmallSIZED_bz.png' alt='ulaz' />
-          </div> */}
+        <div className='grid grid-cols-3 grid-rows-3 gap-3 mt-8 md:gap-6'>
           <div className='col-span-2 row-span-2'>
             <Image
               width={2000}
@@ -110,10 +89,10 @@ const About = () => {
       </section>
 
       {/* HISTORIJA */}
-      <section className='bg-[#24262B] text-white px-10 py-10 leading-8 text-2xl'>
+      <section className='bg-[#24262B] text-white p-5 md:p-10 leading-8 text-xl md:text-2xl'>
         <h2 className='text-center '>Pored firme Ganjgo line u našem centru nalaze se još tri firme.</h2>
-        <div className='grid grid-cols-2 gap-6 py-10 text-xl'>
-          <div className='col-span-2 bg-[#242D5D] rounded-xl p-8'>
+        <div className='grid grid-cols-1 gap-6 py-10 text-xl md:grid-cols-2'>
+          <div className='md:col-span-2 bg-[#242D5D] rounded-xl p-8'>
             <p>
               2004. godine registruje se firma Autocentar Ganjgo d.o.o. gdje se vežu za „jako“ ime u automobilskoj
               industriji - HYUNDAI. Autocentar Ganjgo ima i novu dodatnu lokaciju Magistralni put bb, općina Lukavac. U
