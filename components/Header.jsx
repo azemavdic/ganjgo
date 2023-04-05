@@ -5,7 +5,9 @@ import Navbar from './Navbar'
 const Header = ({ children, type, path, classes }) => {
   return (
     <>
-      <header className={`relative overflow-hidden ${type !== '' ? ' h-[500px] xl:h-screen' : 'bg-[#24262B]'}`}>
+      <header
+        className={`relative overflow-hidden ${type !== '' ? 'h-[165px] md:h-[500px] xl:h-screen' : 'bg-[#24262B]'}`}
+      >
         {type !== '' && (
           <>
             <div className='absolute top-0 left-0 z-10 w-full h-full opacity-100 bg-slate-50/20'></div>
