@@ -19,9 +19,9 @@ const Kontakt = () => {
       <Header type=''>
         <Navbar></Navbar>
       </Header>
-      <section className='bg-[#3A3B40] py-6  px-36 text-white'>
-        <h1 className='mb-8 text-4xl font-bold '>Kontakt</h1>
-        <div className='grid grid-cols-3 gap-5 mb-10'>
+      <section className='bg-[#3A3B40] py-6 container px-8  md:px-36 text-white'>
+        <h1 className='mb-4 text-xl font-bold md:mb-8 md:text-4xl '>Kontakt</h1>
+        <div className='grid grid-cols-1 gap-5 mb-10 md:grid-cols-3'>
           {/* TEHNIČKI PREGLED */}
           <div className='bg-[#323A6B] p-6 rounded row-span-3 space-y-4'>
             <h2 className='mb-5 text-xl font-bold 2xl:text-2xl'>Tehnički pregled</h2>
@@ -206,7 +206,7 @@ const Kontakt = () => {
 
         <div className='flex items-center mb-5 space-x-3'>
           <CiLocationOn size={60} />
-          <p className='text-2xl font-semibold'>203. brigade br 88 Matuzići, 74203 Doboj Jug, Bosna i Hercegovina</p>
+          <p className='font-semibold md:text-2xl'>203. brigade br 88 Matuzići, 74203 Doboj Jug, Bosna i Hercegovina</p>
         </div>
 
         <iframe
