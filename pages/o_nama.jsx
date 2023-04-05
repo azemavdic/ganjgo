@@ -13,7 +13,7 @@ const About = () => {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Header type='image' path='/images/o_nama.jpg' classes='md:-top-10 2xl:top-0'>
+      <Header type='image' path='bg-[url("/images/o_nama.jpg")]' classes=''>
         <Navbar>
           <div className='z-20 flex flex-col items-center justify-center p-10 md:p-20 '>
             <div className='w-1/2 text-center space-y-9'>

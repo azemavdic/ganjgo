@@ -33,12 +33,12 @@ const Usluge = () => {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Header type='image' path='/images/usluge.jpg' classes='-top-40 2xl:-top-40'>
+      <Header type='image' path='bg-[url("/images/usluge.jpg")]' classes=''>
         <Navbar>
           <div className='z-20 flex flex-col items-center justify-center p-20 '>
             <div className='w-1/2 text-center space-y-9'>
               <h2 className='text-4xl font-bold tracking-wider 2xl:text-5xl'>Usluge</h2>
-              <p className='text-lg font-semibold tracking-wider 2xl:text-2xl'>
+              <p className='text-lg font-semibold tracking-wider 2xl:text-2xl hidden md:block'>
                 Dolaskom u Ganjgo centar dočekaće Vas stručno i ljubazno osoblje, brza i kvalitetna usluga i povoljne
                 cijene!
               </p>
