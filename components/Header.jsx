@@ -7,7 +7,7 @@ const Header = ({ children, type, path, classes }) => {
     <>
       <header
         className={` relative overflow-hidden w-full  ${
-          type === 'video' ? 'h-[50vh] sm:h-full' : type === 'image' ? 'h-[50vh] sm:h-screen' : 'bg-[#24262B]'
+          type === 'video' ? 'h-[70vh] sm:h-full' : type === 'image' ? 'h-[70vh] sm:h-screen' : 'bg-[#24262B]'
         }`}
       >
         {type !== '' && (
