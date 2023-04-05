@@ -38,10 +38,12 @@ const Navbar = ({ children }) => {
             <Image src='/images/logo.png' alt='logo' width='300' height='300' />
           </Link>
           {/* MOBILNA navigacija */}
-          <GiHamburgerMenu size={25} />
           <Link href='/' className='block md:hidden'>
             <Image src='/images/logo.png' alt='logo' width='120' height='120' />
           </Link>
+          <div className='md:hidden'>
+            <GiHamburgerMenu size={25} />
+          </div>
 
           <div className='hidden space-x-4 md:block'>
             {navigationMenu.map((el) => (
