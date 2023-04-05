@@ -6,7 +6,7 @@ const Header = ({ children, type, path, classes }) => {
   return (
     <>
       <header
-        className={`relative overflow-hidden ${type !== '' ? 'h-[165px] md:h-[500px] xl:h-screen' : 'bg-[#24262B]'}`}
+        className={`relative overflow-hidden ${type !== '' ? 'h-[186px] md:h-[500px] xl:h-screen' : 'bg-[#24262B]'}`}
       >
         {type !== '' && (
           <>
