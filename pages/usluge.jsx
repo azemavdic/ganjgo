@@ -35,10 +35,10 @@ const Usluge = () => {
       </Head>
       <Header type='image' path='bg-[url("/images/usluge.jpg")]' classes=''>
         <Navbar>
-          <div className='z-20 flex flex-col items-center justify-center p-20 '>
+          <div className='z-20 flex flex-col items-center justify-center p-10 md:p-20 md:mt-28 '>
             <div className='w-1/2 text-center space-y-9'>
               <h2 className='text-4xl font-bold tracking-wider 2xl:text-5xl'>Usluge</h2>
-              <p className='text-lg font-semibold tracking-wider 2xl:text-2xl hidden md:block'>
+              <p className='hidden text-lg font-semibold tracking-wider 2xl:text-2xl md:block'>
                 Dolaskom u Ganjgo centar dočekaće Vas stručno i ljubazno osoblje, brza i kvalitetna usluga i povoljne
                 cijene!
               </p>
@@ -49,7 +49,7 @@ const Usluge = () => {
 
       {/* SVE USLUGE */}
       <section className='bg-[#171B29] text-white px-14 md:px-16 pt-14 text-lg leading-8'>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-16 justify-items-center'>
+        <div className='grid grid-cols-1 gap-16 md:grid-cols-3 justify-items-center'>
           {vrsteUsluge.map((el) => (
             <div className='flex flex-col items-center space-y-5 text-center 2xl:w-1/2' key={el.id}>
               <div className='p-4 text-rose-600 rounded-full bg-[#393e4e]'>
@@ -60,7 +60,7 @@ const Usluge = () => {
             </div>
           ))}
         </div>
-        <div className='flex items-center justify-center flex-wrap gap-5 pb-5 mt-10 md:mt-20 text-sm text-gray-500 transition-all duration-300 2xl:text-xl'>
+        <div className='flex flex-wrap items-center justify-center gap-5 pb-5 mt-10 text-sm text-gray-500 transition-all duration-300 md:mt-20 2xl:text-xl'>
           {buttons.map((el) => (
             <button
               key={el.id}
@@ -76,10 +76,10 @@ const Usluge = () => {
       {/* TEHNIČKI PREGLED */}
       {(activeButton === 1 || activeButton === 2) && (
         <section className='bg-[#24262B] text-white px-5 md:py-5 pt-2 leading-8 text-2xl transition-all duration-300'>
-          <div className='flex flex-col md:flex-row items-center justify-between gap-6 p-2'>
-            <div className='md:w-3/5 space-y-5 2xl:p-12'>
-              <h2 className='text-3xl md:text-4xl font-bold text-center'>Tehnički pregled</h2>
-              <p className=' text-lg md:text-xl font-semibold text-gray-400'>
+          <div className='flex flex-col items-center justify-between gap-6 p-2 md:flex-row'>
+            <div className='space-y-5 md:w-3/5 2xl:p-12'>
+              <h2 className='text-3xl font-bold text-center md:text-4xl'>Tehnički pregled</h2>
+              <p className='text-lg font-semibold text-gray-400  md:text-xl'>
                 Na našem tehničkom pregledu dočekat će vas stručno i ljubazno osoblje sa vrhunskom kvalitetom
                 usluge.Nudimo sve vrste tehničkog pregleda: putnička vozila teretna, priključna, autobusi, radna vozila,
                 radne mašine...
@@ -96,10 +96,10 @@ const Usluge = () => {
       {/* HOMOLOGACIJA */}
       {(activeButton === 1 || activeButton === 3) && (
         <section className='bg-[#171B29] text-white px-5 md:py-5 pt-2 leading-8 text-2xl'>
-          <div className='flex flex-col md:flex-row-reverse items-center justify-between gap-6 p-2'>
-            <div className='md:w-3/5 space-y-5 2xl:p-12'>
-              <h2 className='text-3xl md:text-4xl font-bold text-center'>Homologacija</h2>
-              <p className='text-lg md:text-xl font-semibold text-gray-400'>
+          <div className='flex flex-col items-center justify-between gap-6 p-2 md:flex-row-reverse'>
+            <div className='space-y-5 md:w-3/5 2xl:p-12'>
+              <h2 className='text-3xl font-bold text-center md:text-4xl'>Homologacija</h2>
+              <p className='text-lg font-semibold text-gray-400 md:text-xl'>
                 Homologacija vozila je postupak potvrđivanja ocjene usklađenosti vozila sa zahtjevima propisa o
                 homologaciji koji se primjenjuju u Bosni i Hercegovini. Drugim riječima, homologacija vozila predstavlja
                 provjeru bitnih sklopova vozila, koji direktno ili indirektno utiču na okoliš i sigurnost putnika (npr.
@@ -136,10 +136,10 @@ const Usluge = () => {
       {/* CERTIFIKACIJA */}
       {(activeButton === 1 || activeButton === 4) && (
         <section className='bg-[#24262B] text-white px-5 md:py-5 pt-2 leading-8 text-2xl transition-all duration-300'>
-          <div className='flex flex-col md:flex-row items-center justify-between gap-6 p-2'>
-            <div className='md:w-3/5 space-y-5 2xl:p-12'>
-              <h2 className='text-3xl md:text-4xl font-bold text-center'>Certifikacija</h2>
-              <p className='text-lg md:text-xl font-semibold text-gray-400'>
+          <div className='flex flex-col items-center justify-between gap-6 p-2 md:flex-row'>
+            <div className='space-y-5 md:w-3/5 2xl:p-12'>
+              <h2 className='text-3xl font-bold text-center md:text-4xl'>Certifikacija</h2>
+              <p className='text-lg font-semibold text-gray-400 md:text-xl'>
                 Člankom 206. Zakona o osnovama sigurnosti prometa na cestama u BiH („Službeni glasnik BiH“, broj 6/06.,
                 75/06. i 44/07.), propisano je da motorna i priključna vozila koja se pojedinačno proizvode,
                 prepravljaju ili popravljaju u većem obimu ili su im oštećeni sklopovi i uređaji značajni za sigurno
@@ -159,7 +159,7 @@ const Usluge = () => {
                 Kako je novost ovakav oblik organizacije na bosanskohercegovačkom tlu, pojašnjavamo što zapravo radi
                 organizacija prilikom provedbe procesa certificiranja.
               </h2>
-              <p className='text-lg md:text-xl font-semibold text-gray-400'>
+              <p className='text-lg font-semibold text-gray-400 md:text-xl'>
                 Prema navedenom Zakonu ocjenjivanje usklađenosti obavlja organizacija za certificiranje vozila, a skladu
                 sa Pravilnikom o certificiranju vozila i uvjetima koje organizacije za certificiranje vozila moraju
                 ispuniti („Službeni glasnik BiH“ broj 41/08).
@@ -172,65 +172,65 @@ const Usluge = () => {
                 obuhvaćaju sljedeće vrste ispitivanja i certificiranja:
               </h2>
               <div className='grid grid-cols-1 md:grid-cols-4 gap-y-4 md:gap-y-0 md:gap-6 md:justify-items-center place-items-start 2xl:gap-12'>
-                <div className='grid grid-cols-10 md:flex col-span-4 md:col-span-1 flex-row md:flex-col gap-x-4 md:gap-0 md:space-y-3 items-center justify-center '>
+                <div className='grid flex-row items-center justify-center grid-cols-10 col-span-4 md:flex md:col-span-1 md:flex-col gap-x-4 md:gap-0 md:space-y-3 '>
                   <span className='text-indigo-500 rounded-full bg-[#393e4e] md:w-12 md:h-12 w-8 h-8 md:pt-2 text-center col-span-1'>
                     1
                   </span>
-                  <span className='text-lg font-semibold 2xl:px-20 col-span-9'>Identifikacija vozila.</span>
+                  <span className='col-span-9 text-lg font-semibold 2xl:px-20'>Identifikacija vozila.</span>
                 </div>
 
-                <div className='grid grid-cols-10 md:flex col-span-4 md:col-span-1 flex-row md:flex-col gap-x-4 md:gap-0 md:space-y-3 items-center justify-center '>
+                <div className='grid flex-row items-center justify-center grid-cols-10 col-span-4 md:flex md:col-span-1 md:flex-col gap-x-4 md:gap-0 md:space-y-3 '>
                   <span className='text-indigo-500 rounded-full bg-[#393e4e] md:w-12 md:h-12 w-8 h-8 md:pt-2 text-center col-span-1'>
                     2
                   </span>
-                  <span className='text-lg font-semibold text-left md:text-center 2xl:px-20 col-span-9'>
+                  <span className='col-span-9 text-lg font-semibold text-left md:text-center 2xl:px-20'>
                     Namjenske prepravke i rekonstrukcije vozila.
                   </span>
                 </div>
 
-                <div className='grid grid-cols-10 md:flex col-span-4 md:col-span-1 flex-row md:flex-col gap-x-4 md:gap-0 md:space-y-3 items-center justify-center '>
+                <div className='grid flex-row items-center justify-center grid-cols-10 col-span-4 md:flex md:col-span-1 md:flex-col gap-x-4 md:gap-0 md:space-y-3 '>
                   <span className='text-indigo-500 rounded-full bg-[#393e4e] md:w-12 md:h-12 w-8 h-8 md:pt-2 text-center col-span-1'>
                     3
                   </span>
-                  <span className='text-lg font-semibold text-left md:text-center 2xl:px-20 col-span-9'>
+                  <span className='col-span-9 text-lg font-semibold text-left md:text-center 2xl:px-20'>
                     Ugradnja novih sklopova, uređaja i opreme za vozila.
                   </span>
                 </div>
 
-                <div className='grid grid-cols-10 md:flex col-span-4 md:col-span-1 flex-row md:flex-col gap-x-4 md:gap-0 md:space-y-3 items-center justify-center '>
+                <div className='grid flex-row items-center justify-center grid-cols-10 col-span-4 md:flex md:col-span-1 md:flex-col gap-x-4 md:gap-0 md:space-y-3 '>
                   <span className='text-indigo-500 rounded-full bg-[#393e4e] md:w-12 md:h-12 w-8 h-8 md:pt-2 text-center col-span-1'>
                     4
                   </span>
-                  <span className='text-lg font-semibold text-left md:text-center 2xl:px-20 col-span-9'>
+                  <span className='col-span-9 text-lg font-semibold text-left md:text-center 2xl:px-20'>
                     Rekonstrukcija vozila sa pogonom motora na alternativna goriva.
                   </span>
                 </div>
 
-                <div className='md:flex flex-row md:flex-col items-center justify-center col-span-4 grid grid-cols-10  md:gap-0 md:col-span-2 md:space-y-3'>
+                <div className='grid flex-row items-center justify-center grid-cols-10 col-span-4 md:flex md:flex-col md:gap-0 md:col-span-2 md:space-y-3'>
                   <span className='text-indigo-500 rounded-full bg-[#393e4e] md:w-12 md:h-12 w-8 h-8 md:pt-2 text-center col-span-1'>
                     5
                   </span>
-                  <span className='text-lg font-semibold text-left md:text-center 2xl:px-36 col-span-9'>
+                  <span className='col-span-9 text-lg font-semibold text-left md:text-center 2xl:px-36'>
                     Certificiranje vozila za prijevoz opasnih materija u skladu sa međunarodnim sporazumom o prijevozu
                     opasnih materija ADR.
                   </span>
                 </div>
 
-                <div className='md:flex flex-row md:flex-col items-center justify-center col-span-4 gap-x-4 grid grid-cols-10  md:gap-0 md:col-span-2 md:space-y-3'>
+                <div className='grid flex-row items-center justify-center grid-cols-10 col-span-4 md:flex md:flex-col gap-x-4 md:gap-0 md:col-span-2 md:space-y-3'>
                   <span className='text-indigo-500 rounded-full bg-[#393e4e] md:w-12 md:h-12 w-8 h-8 md:pt-2 text-center col-span-1'>
                     6
                   </span>
-                  <span className='text-lg font-semibold text-left md:text-center 2xl:px-36 col-span-9'>
+                  <span className='col-span-9 text-lg font-semibold text-left md:text-center 2xl:px-36'>
                     Certificiranje vozila za prijevoz lako kvarljive robe u skladu sa međunarodnim sporazumom o
                     prijevozu lako kvarljive robe ADP.
                   </span>
                 </div>
 
-                <div className='md:flex flex-row md:flex-col items-center justify-center col-span-4 md:col-start-2 grid grid-cols-10 gap-x-4 md:gap-0 md:col-end-4 md:space-y-3'>
+                <div className='grid flex-row items-center justify-center grid-cols-10 col-span-4 md:flex md:flex-col md:col-start-2 gap-x-4 md:gap-0 md:col-end-4 md:space-y-3'>
                   <span className='text-indigo-500 rounded-full bg-[#393e4e] md:w-12 md:h-12 w-8 h-8 md:pt-2 text-center col-span-1'>
                     7
                   </span>
-                  <span className='text-lg font-semibold text-left md:text-center 2xl:px-36 col-span-9'>
+                  <span className='col-span-9 text-lg font-semibold text-left md:text-center 2xl:px-36'>
                     Certificiranje novih konstrukcija i pojedinačno proizvedenih vozila.
                   </span>
                 </div>
@@ -243,9 +243,9 @@ const Usluge = () => {
       {/* TAHOGRAFI */}
       {(activeButton === 1 || activeButton === 5) && (
         <section className='bg-[#171B29] text-white px-5 md:py-5 pt-2 leading-8 text-xl md:text-2xl text-center'>
-          <h2 className='mt-4 md:mt-10 mb-5 text-3xl md:text-4xl font-bold'>Tahografi</h2>
+          <h2 className='mt-4 mb-5 text-3xl font-bold md:mt-10 md:text-4xl'>Tahografi</h2>
           <p className=''>U Ganjgo-line doo - RADIONICI ZA TAHOGRAFE nudimo Vam</p>
-          <div className='grid grid-cols-12 md:gap-6 gap-2 p-2 md:p-10'>
+          <div className='grid grid-cols-12 gap-2 p-2 md:gap-6 md:p-10'>
             <div className='bg-[#0219AC] p-2 md:p-6 md:col-start-3 md:col-end-7 col-start-1 col-end-13 flex items-center justify-center'>
               <p>Baždarenje (ispitivanje) svih vrsta analognih i digitalnih tahografa</p>
             </div>
@@ -260,7 +260,7 @@ const Usluge = () => {
             </div>
           </div>
           <div className='pb-4 md:pb-0 md:mb-10'>
-            <h2 className='md:mt-10 mt-6 mb-5 text-2xl md:text-3xl font-bold'>
+            <h2 className='mt-6 mb-5 text-2xl font-bold md:mt-10 md:text-3xl'>
               NOVO U PONUDI I MEĐU PRVIM U BIH BAŽDARENJE PAMETNIH- SMART TAHOGRAFA
             </h2>
             <p>Za sve naše klijente vršimo usluge BESPLATNO preuzimanja podataka sa tahografa i vozačkih kartica</p>
@@ -271,10 +271,10 @@ const Usluge = () => {
       {/* VATROGASNI APARATI */}
       {(activeButton === 1 || activeButton === 6) && (
         <section className='bg-[#24262B] text-white px-5 md:py-5 pt-2 leading-8 text-2xl transition-all duration-300'>
-          <div className='flex flex-col md:flex-row items-center justify-between gap-6 p-2'>
-            <div className='md:w-3/5 space-y-5 2xl:p-12'>
-              <h2 className='text-3xl md:text-4xl font-bold text-center'>Vatrogasni aparati</h2>
-              <p className='text-lg md:text-xl font-semibold text-gray-400'>
+          <div className='flex flex-col items-center justify-between gap-6 p-2 md:flex-row'>
+            <div className='space-y-5 md:w-3/5 2xl:p-12'>
+              <h2 className='text-3xl font-bold text-center md:text-4xl'>Vatrogasni aparati</h2>
+              <p className='text-lg font-semibold text-gray-400 md:text-xl'>
                 U sklopu našeg objekta posjedujemo savremenu radionicu za servisiranje i baždarenje vatrogasnih aparata.
               </p>
             </div>
@@ -289,46 +289,46 @@ const Usluge = () => {
       {/* TRANSPORT */}
       {(activeButton === 1 || activeButton === 7) && (
         <section className='bg-[#171B29] text-white 2xl:px-40 px-20 md:py-5 py-2 leading-8 text-2xl text-center'>
-          <h2 className='mt-6 md:mt-10 md:mb-5 text-4xl font-bold'>Transport</h2>
-          <div className='grid grid-cols-1 md:grid-cols-5 md:gap-5 gap-8 mt-10 md:mt-20 mb-10 md:mb-14 justify-items-center place-items-start'>
+          <h2 className='mt-6 text-4xl font-bold md:mt-10 md:mb-5'>Transport</h2>
+          <div className='grid grid-cols-1 gap-8 mt-10 mb-10 md:grid-cols-5 md:gap-5 md:mt-20 md:mb-14 justify-items-center place-items-start'>
             <div className='flex flex-col items-center justify-center'>
               <div className='p-4 text-indigo-500 rounded-full bg-[#393e4e]'>
                 <BsTruck size={30} />
               </div>
-              <h2 className='text-lg md:text-xl font-semibold md:font-bold'>Kompletni transport do 105 m3</h2>
+              <h2 className='text-lg font-semibold md:text-xl md:font-bold'>Kompletni transport do 105 m3</h2>
             </div>
 
             <div className='flex flex-col items-center justify-center'>
               <div className='p-4 text-indigo-500 rounded-full bg-[#393e4e]'>
                 <BsTruck size={30} />
               </div>
-              <h2 className='text-lg md:text-xl font-semibold md:font-bold'>Djelimični transport</h2>
+              <h2 className='text-lg font-semibold md:text-xl md:font-bold'>Djelimični transport</h2>
             </div>
 
             <div className='flex flex-col items-center justify-center'>
               <div className='p-4 text-indigo-500 rounded-full bg-[#393e4e]'>
                 <BsTruck size={30} />
               </div>
-              <h2 className='text-lg md:text-xl font-semibold md:font-bold'>Dotovari</h2>
+              <h2 className='text-lg font-semibold md:text-xl md:font-bold'>Dotovari</h2>
             </div>
 
             <div className='flex flex-col items-center justify-center'>
               <div className='p-4 text-indigo-500 rounded-full bg-[#393e4e]'>
                 <BsTruck size={30} />
               </div>
-              <h2 className='text-lg md:text-xl font-semibold md:font-bold'>ADR transporti roba</h2>
+              <h2 className='text-lg font-semibold md:text-xl md:font-bold'>ADR transporti roba</h2>
             </div>
 
             <div className='flex flex-col items-center justify-center'>
               <div className='p-4 text-indigo-500 rounded-full bg-[#393e4e]'>
                 <BsTruck size={30} />
               </div>
-              <h2 className='text-lg md:text-xl font-semibold md:font-bold'>Transport polovnih i novih auta</h2>
+              <h2 className='text-lg font-semibold md:text-xl md:font-bold'>Transport polovnih i novih auta</h2>
             </div>
           </div>
           <h2 className='md:py-6'>Usluge transporta na relacijama</h2>
           {/* ZASTAVE */}
-          <div className='grid grid-cols-6 gap-10 mt-10 mb-14 justify-items-center text-lg md:text-2xl place-items-start'>
+          <div className='grid grid-cols-6 gap-10 mt-10 text-lg mb-14 justify-items-center md:text-2xl place-items-start'>
             <div className='flex flex-col items-center justify-center space-y-3'>
               <Image src='/images/icons/germany.png' alt='germany' width={50} height={50} />
               <p>Njemačka</p>

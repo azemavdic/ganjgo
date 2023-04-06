@@ -19,7 +19,7 @@ const Kontakt = () => {
       <Header type=''>
         <Navbar></Navbar>
       </Header>
-      <section className='bg-[#3A3B40] py-6 container px-8  md:px-36 text-white'>
+      <section className='bg-[#3A3B40] py-6  px-8  md:px-36 text-white'>
         <h1 className='mb-4 text-xl font-bold md:mb-8 md:text-4xl '>Kontakt</h1>
         <div className='grid grid-cols-1 gap-5 mb-10 md:grid-cols-3'>
           {/* TEHNIČKI PREGLED */}
@@ -212,7 +212,8 @@ const Kontakt = () => {
         <iframe
           src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2836.083012480131!2d18.043167099999998!3d44.697504099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475e81577b2b12ad%3A0xc2b1d259796212cb!2s203.%20brigade%2088%2C%20Matuzi%C4%87i%2074203!5e0!3m2!1sen!2sba!4v1680097072991!5m2!1sen!2sba'
           width='100%'
-          height='600'
+          // height='600'
+          className='h-[400px] md:h-[600px]'
           // style='border:0;'
           allowfullscreen=''
           loading='lazy'

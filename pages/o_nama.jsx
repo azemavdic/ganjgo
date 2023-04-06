@@ -15,7 +15,7 @@ const About = () => {
       </Head>
       <Header type='image' path='bg-[url("/images/o_nama.jpg")]' classes=''>
         <Navbar>
-          <div className='z-20 flex flex-col items-center justify-center p-10 md:p-20 '>
+          <div className='z-20 flex flex-col items-center justify-center p-10 md:p-20 md:mt-28'>
             <div className='w-1/2 text-center space-y-9'>
               <h2 className='text-4xl font-bold tracking-wider 2xl:text-5xl'>O nama</h2>
               <p className='hidden text-lg font-semibold tracking-wider 2xl:text-2xl md:block'>
