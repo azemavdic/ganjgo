@@ -57,7 +57,7 @@ const Navbar = ({ children }) => {
           <div
             className={`${
               menuActive ? 'translate-x-0 ' : 'translate-x-[100%]'
-            } md:hidden fixed right-0 top-0 w-[60%] bg-[#0219AC] z-10 text-black h-full transition-all duration-300`}
+            } md:hidden fixed right-0 top-0 w-[70%] bg-[#0219AC] z-10 text-black h-full transition-all duration-300`}
           >
             <div className='flex items-center justify-center'>
               <Link href='/' className='block md:hidden'>

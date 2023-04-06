@@ -16,8 +16,9 @@ const Galerija = () => {
       <Header type=''>
         <Navbar></Navbar>
       </Header>
-      <section className='bg-[#3A3B40] p-4'>
-        <div className='grid grid-cols-3 grid-rows-3 gap-3 mt-8 md:gap-6'>
+      <section className='bg-[#3A3B40] p-4 text-white'>
+        <h1 className='mb-4 text-xl font-bold md:mb-8 md:text-4xl '>Galerija</h1>
+        <div className='grid grid-cols-3 grid-rows-3 gap-3 md:mt-8 md:gap-6'>
           <div className='col-span-2 row-span-2'>
             <Image
               width={2000}
