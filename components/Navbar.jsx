@@ -48,7 +48,7 @@ const Navbar = ({ children }) => {
           </Link>
           {/* MOBILNA navigacija */}
           <Link href='/' className='block md:hidden'>
-            <Image src='/images/logo.png' alt='logo' width='120' height='120' />
+            <Image src='/images/logo.png' alt='logo' width='150' height='150' />
           </Link>
           <button className='z-50 transition duration-300 md:hidden' onClick={(e) => setMenuActive((prev) => !prev)}>
             {menuActive ? <AiOutlineCloseCircle size={25} /> : <GiHamburgerMenu size={25} />}

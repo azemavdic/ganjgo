@@ -81,7 +81,7 @@ const Footer = () => {
           <p className='p-2 text-center md:p-0 md:text-left md:col-span-2'>
             &copy; {currentYear} Ganjgo line. Sva prava zadržana.
           </p>
-          <div className='p-2 space-x-4 place-self-center md:p-0'>
+          <div className='p-2 space-x-4 text-center md:p-0'>
             <a className='hover:text-slate-300' href='#'>
               Politika privatnosti
             </a>
