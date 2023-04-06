@@ -75,11 +75,11 @@ const Usluge = () => {
 
       {/* TEHNIČKI PREGLED */}
       {(activeButton === 1 || activeButton === 2) && (
-        <section className='bg-[#24262B] text-white px-5 md:py-5 pt-2 leading-8 text-2xl transition-all duration-300'>
+        <section className='bg-[#24262B] text-white px-5 md:py-5 py-2 leading-8 text-2xl transition-all duration-300'>
           <div className='flex flex-col items-center justify-between gap-6 p-2 md:flex-row'>
             <div className='space-y-5 md:w-3/5 2xl:p-12'>
               <h2 className='text-3xl font-bold text-center md:text-4xl'>Tehnički pregled</h2>
-              <p className='text-lg font-semibold text-gray-400  md:text-xl'>
+              <p className='text-lg font-semibold text-gray-400 md:text-xl'>
                 Na našem tehničkom pregledu dočekat će vas stručno i ljubazno osoblje sa vrhunskom kvalitetom
                 usluge.Nudimo sve vrste tehničkog pregleda: putnička vozila teretna, priključna, autobusi, radna vozila,
                 radne mašine...
@@ -95,7 +95,7 @@ const Usluge = () => {
 
       {/* HOMOLOGACIJA */}
       {(activeButton === 1 || activeButton === 3) && (
-        <section className='bg-[#171B29] text-white px-5 md:py-5 pt-2 leading-8 text-2xl'>
+        <section className='bg-[#171B29] text-white px-5 md:py-5 py-2 leading-8 text-2xl'>
           <div className='flex flex-col items-center justify-between gap-6 p-2 md:flex-row-reverse'>
             <div className='space-y-5 md:w-3/5 2xl:p-12'>
               <h2 className='text-3xl font-bold text-center md:text-4xl'>Homologacija</h2>
@@ -135,7 +135,7 @@ const Usluge = () => {
 
       {/* CERTIFIKACIJA */}
       {(activeButton === 1 || activeButton === 4) && (
-        <section className='bg-[#24262B] text-white px-5 md:py-5 pt-2 leading-8 text-2xl transition-all duration-300'>
+        <section className='bg-[#24262B] text-white px-5 md:py-5 py-2 leading-8 text-2xl transition-all duration-300'>
           <div className='flex flex-col items-center justify-between gap-6 p-2 md:flex-row'>
             <div className='space-y-5 md:w-3/5 2xl:p-12'>
               <h2 className='text-3xl font-bold text-center md:text-4xl'>Certifikacija</h2>
@@ -242,7 +242,7 @@ const Usluge = () => {
 
       {/* TAHOGRAFI */}
       {(activeButton === 1 || activeButton === 5) && (
-        <section className='bg-[#171B29] text-white px-5 md:py-5 pt-2 leading-8 text-xl md:text-2xl text-center'>
+        <section className='bg-[#171B29] text-white px-5 md:py-5 py-2 leading-8 text-xl md:text-2xl text-center'>
           <h2 className='mt-4 mb-5 text-3xl font-bold md:mt-10 md:text-4xl'>Tahografi</h2>
           <p className=''>U Ganjgo-line doo - RADIONICI ZA TAHOGRAFE nudimo Vam</p>
           <div className='grid grid-cols-12 gap-2 p-2 md:gap-6 md:p-10'>
@@ -270,7 +270,7 @@ const Usluge = () => {
 
       {/* VATROGASNI APARATI */}
       {(activeButton === 1 || activeButton === 6) && (
-        <section className='bg-[#24262B] text-white px-5 md:py-5 pt-2 leading-8 text-2xl transition-all duration-300'>
+        <section className='bg-[#24262B] text-white px-5 md:py-5 py-2 leading-8 text-2xl transition-all duration-300'>
           <div className='flex flex-col items-center justify-between gap-6 p-2 md:flex-row'>
             <div className='space-y-5 md:w-3/5 2xl:p-12'>
               <h2 className='text-3xl font-bold text-center md:text-4xl'>Vatrogasni aparati</h2>
@@ -288,39 +288,39 @@ const Usluge = () => {
 
       {/* TRANSPORT */}
       {(activeButton === 1 || activeButton === 7) && (
-        <section className='bg-[#171B29] text-white 2xl:px-40 px-20 md:py-5 py-2 leading-8 text-2xl text-center'>
-          <h2 className='mt-6 text-4xl font-bold md:mt-10 md:mb-5'>Transport</h2>
-          <div className='grid grid-cols-1 gap-8 mt-10 mb-10 md:grid-cols-5 md:gap-5 md:mt-20 md:mb-14 justify-items-center place-items-start'>
-            <div className='flex flex-col items-center justify-center'>
-              <div className='p-4 text-indigo-500 rounded-full bg-[#393e4e]'>
+        <section className='bg-[#171B29] text-white 2xl:px-40 md:px-20 md:py-5 py-2 leading-8 text-2xl text-center'>
+          <h2 className='mt-4 text-4xl font-bold md:mt-10 md:mb-5'>Transport</h2>
+          <div className='grid grid-cols-1 gap-8 p-2 mt-10 mb-10 md:p-0 md:grid-cols-5 md:gap-5 md:mt-20 md:mb-14 md:justify-items-center place-items-start'>
+            <div className='flex flex-row items-center justify-center gap-3 md:gap-0 md:flex-col'>
+              <div className='p-3 md:p-4 text-indigo-500 rounded-full bg-[#393e4e]'>
                 <BsTruck size={30} />
               </div>
               <h2 className='text-lg font-semibold md:text-xl md:font-bold'>Kompletni transport do 105 m3</h2>
             </div>
 
-            <div className='flex flex-col items-center justify-center'>
-              <div className='p-4 text-indigo-500 rounded-full bg-[#393e4e]'>
+            <div className='flex flex-row items-center justify-center gap-3 md:gap-0 md:flex-col'>
+              <div className='p-3 md:p-4 text-indigo-500 rounded-full bg-[#393e4e]'>
                 <BsTruck size={30} />
               </div>
               <h2 className='text-lg font-semibold md:text-xl md:font-bold'>Djelimični transport</h2>
             </div>
 
-            <div className='flex flex-col items-center justify-center'>
-              <div className='p-4 text-indigo-500 rounded-full bg-[#393e4e]'>
+            <div className='flex flex-row items-center justify-center gap-3 md:gap-0 md:flex-col'>
+              <div className='p-3 md:p-4 text-indigo-500 rounded-full bg-[#393e4e]'>
                 <BsTruck size={30} />
               </div>
               <h2 className='text-lg font-semibold md:text-xl md:font-bold'>Dotovari</h2>
             </div>
 
-            <div className='flex flex-col items-center justify-center'>
-              <div className='p-4 text-indigo-500 rounded-full bg-[#393e4e]'>
+            <div className='flex flex-row items-center justify-center gap-3 md:gap-0 md:flex-col'>
+              <div className='p-3 md:p-4 text-indigo-500 rounded-full bg-[#393e4e]'>
                 <BsTruck size={30} />
               </div>
               <h2 className='text-lg font-semibold md:text-xl md:font-bold'>ADR transporti roba</h2>
             </div>
 
-            <div className='flex flex-col items-center justify-center'>
-              <div className='p-4 text-indigo-500 rounded-full bg-[#393e4e]'>
+            <div className='flex flex-row items-center justify-center gap-3 md:gap-0 md:flex-col'>
+              <div className='p-3 md:p-4 text-indigo-500 rounded-full bg-[#393e4e]'>
                 <BsTruck size={30} />
               </div>
               <h2 className='text-lg font-semibold md:text-xl md:font-bold'>Transport polovnih i novih auta</h2>
@@ -328,7 +328,7 @@ const Usluge = () => {
           </div>
           <h2 className='md:py-6'>Usluge transporta na relacijama</h2>
           {/* ZASTAVE */}
-          <div className='grid grid-cols-6 gap-10 mt-10 text-lg mb-14 justify-items-center md:text-2xl place-items-start'>
+          <div className='grid grid-cols-3 gap-10 mt-10 text-lg md:grid-cols-6 mb-14 justify-items-center md:text-2xl place-items-start'>
             <div className='flex flex-col items-center justify-center space-y-3'>
               <Image src='/images/icons/germany.png' alt='germany' width={50} height={50} />
               <p>Njemačka</p>
