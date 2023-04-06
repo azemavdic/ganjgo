@@ -26,12 +26,12 @@ export default function Home() {
               <p className='text-lg font-semibold tracking-wider 2xl:text-2xl'>
                 Na našem tehničkom pregledu dočekaće Vas stručno i ljubazno osoblje sa vrhunskom kvalitetom usluge
               </p>
-              <button
+              {/* <button
                 onClick={() => router.push('/kontakt')}
                 className='px-8 py-2 bg-gradient-to-r from-[#0219AC] to-[#2D63F6] rounded-full uppercase 2xl:text-xl 2xl:font-semibold 2xl:px-10 2xl:py-4'
               >
                 Kontakt
-              </button>
+              </button> */}
             </div>
           </div>
         </Navbar>

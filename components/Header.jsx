@@ -7,7 +7,11 @@ const Header = ({ children, type, path, classes }) => {
     <>
       <header
         className={` relative overflow-hidden w-full  ${
-          type === 'video' ? 'h-[70vh] sm:h-full' : type === 'image' ? 'h-[70vh] sm:h-screen' : 'bg-[#24262B]'
+          type === 'video'
+            ? 'h-[70vh] 2xl:h-[85vh] sm:h-full'
+            : type === 'image'
+            ? 'h-[70vh] sm:h-screen'
+            : 'bg-[#24262B]'
         }`}
       >
         {type !== '' && (
@@ -20,7 +24,7 @@ const Header = ({ children, type, path, classes }) => {
         {/* VIDEO */}
         {type === 'video' && (
           <video
-            className='absolute w-full h-full md:h-full top-0 left-0 z-0 object-cover object-center '
+            className='absolute top-0 left-0 z-0 object-cover object-center w-full h-full md:h-full '
             // className='absolute top-0 left-0 z-0 w-full h-full object-fit contain'
             autoPlay
             loop
