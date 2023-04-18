@@ -6,36 +6,42 @@ export const vrsteUsluge = [
     Icon: BsBagCheck,
     title: 'Tehnički pregled',
     text: 'Na našem tehničkom pregledu dočekat će vas stručno i ljubazno osoblje sa vrhunskom kvalitetom usluge.',
+    href: '#tehnicki',
   },
   {
     id: 2,
     Icon: BsBagCheck,
     title: 'Homologacija',
     text: 'Homologacija vozila je postupak potvrđivanja ocjene usklađenosti vozila sa zahtjevima propisa o homologaciji.',
+    href: '#homologacija',
   },
   {
     id: 3,
     Icon: BsBagCheck,
     title: 'Certifikacija',
     text: 'Člankom 206. Zakona o osnovama sigurnosti prometa na cestama u BiH ("Službeni glasnik BiH", broj 6/06, 75/06)',
+    href: '#certifikacija',
   },
   {
     id: 4,
     Icon: BsBagCheck,
     title: 'Tahografi',
     text: 'U Ganjgo line doo - RADIONICI ZA TAHOGRAFE nudimo Vam: baždarenje (ispitivanje) svih vrsta analognih...',
+    href: '#tahografi',
   },
   {
     id: 5,
     Icon: BsBagCheck,
     title: 'Vatrogasni aparati',
     text: 'U sklopu našeg objekta posjedujemo savremenu radionicu za servisiranje i baždarenje vatrogasnih aparata.',
+    href: '#vatrogasni',
   },
   {
     id: 6,
     Icon: BsBagCheck,
     title: 'Transport',
     text: 'Vrste transporta: Kompletni transport do 105 m3; Djelomični transport; Dotovari; ADR transporti roba.',
+    href: '#transport',
   },
 ]
 

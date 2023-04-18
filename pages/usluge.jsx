@@ -8,9 +8,9 @@ import { BsTruck } from 'react-icons/bs'
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
 
 const Usluge = () => {
-  const [activeButton, setActiveButton] = useState(1)
+  const [activeButton, setActiveButton] = useState(0)
   const [activePanels, setActivePanels] = useState([1, 2])
-  const [activeDescription, setActiveDescription] = useState([])
+  const [activeDescription, setActiveDescription] = useState([1, 2, 3, 4, 5, 6])
 
   function handleClickButton(buttonId) {
     setActiveButton(buttonId)
@@ -59,13 +59,14 @@ const Usluge = () => {
       </Header>
 
       {/* SVE USLUGE */}
-      <section className='bg-[#171B29] text-white px-14 md:px-16 pt-14 text-lg leading-8'>
-        <div className='grid grid-cols-1 gap-16 md:grid-cols-3 justify-items-center'>
+      <section className='bg-[#171B29] text-white px-14 md:px-16 pt-14 text-lg leading-8' id='top'>
+        <div className='grid grid-cols-1 gap-16 pb-5 md:grid-cols-3 justify-items-center'>
           {vrsteUsluge.map((el) => (
             <div className='flex flex-col items-center space-y-5 text-center 2xl:w-1/2' key={el.id}>
               <button
                 className='p-4 text-rose-600 rounded-full bg-[#393e4e] hover:bg-[#393e4e]/60 hover:text-rose-600/60'
-                onClick={(e) => handleShowDescription(el.id)}
+                onClick={() => handleClickButton(el.id)}
+                // href={el.href}
               >
                 <el.Icon size={30} />
               </button>
@@ -83,7 +84,7 @@ const Usluge = () => {
             </div>
           ))}
         </div>
-        <div className='flex flex-wrap items-center justify-center gap-5 pb-5 mt-10 text-sm text-gray-500 transition-all duration-300 md:mt-20 2xl:text-xl'>
+        {/* <div className='flex flex-wrap items-center justify-center gap-5 pb-5 mt-10 text-sm text-gray-500 transition-all duration-300 md:mt-20 2xl:text-xl'>
           {buttons.map((el) => (
             <button
               key={el.id}
@@ -93,12 +94,15 @@ const Usluge = () => {
               {el.title}
             </button>
           ))}
-        </div>
+        </div> */}
       </section>
 
       {/* TEHNIČKI PREGLED */}
-      {(activeButton === 1 || activeButton === 2) && (
-        <section className='bg-[#24262B] text-white px-5 md:py-5 py-2 leading-8 text-2xl transition-all duration-300'>
+      {activeButton === 1 && (
+        <section
+          className='bg-[#24262B] text-white px-5 md:py-5 py-2 leading-8 text-2xl transition-all duration-300'
+          id='tehnicki'
+        >
           <div className='flex flex-col items-center justify-between gap-6 p-2 md:flex-row'>
             <div className='space-y-5 md:w-3/5 2xl:p-12'>
               <h2 className='text-3xl font-bold text-center md:text-4xl'>Tehnički pregled</h2>
@@ -117,8 +121,8 @@ const Usluge = () => {
       )}
 
       {/* HOMOLOGACIJA */}
-      {(activeButton === 1 || activeButton === 3) && (
-        <section className='bg-[#171B29] text-white px-5 md:py-5 py-2 leading-8 text-2xl'>
+      {activeButton === 2 && (
+        <section className='bg-[#171B29] text-white px-5 md:py-5 py-2 leading-8 text-2xl' id='homologacija'>
           <div className='flex flex-col items-center justify-between gap-6 p-2 md:flex-row-reverse'>
             <div className='space-y-5 md:w-3/5 2xl:p-12'>
               <h2 className='text-3xl font-bold text-center md:text-4xl'>Homologacija</h2>
@@ -157,8 +161,11 @@ const Usluge = () => {
       )}
 
       {/* CERTIFIKACIJA */}
-      {(activeButton === 1 || activeButton === 4) && (
-        <section className='bg-[#24262B] text-white px-5 md:py-5 py-2 leading-8 text-2xl transition-all duration-300'>
+      {activeButton === 3 && (
+        <section
+          className='bg-[#24262B] text-white px-5 md:py-5 py-2 leading-8 text-2xl transition-all duration-300'
+          id='certifikacija'
+        >
           <div className='flex flex-col items-center justify-between gap-6 p-2 md:flex-row'>
             <div className='space-y-5 md:w-3/5 2xl:p-12'>
               <h2 className='text-3xl font-bold text-center md:text-4xl'>Certifikacija</h2>
@@ -264,8 +271,11 @@ const Usluge = () => {
       )}
 
       {/* TAHOGRAFI */}
-      {(activeButton === 1 || activeButton === 5) && (
-        <section className='bg-[#171B29] text-white px-5 md:py-5 py-2 leading-8 text-xl md:text-2xl text-center'>
+      {activeButton === 4 && (
+        <section
+          className='bg-[#171B29] text-white px-5 md:py-5 py-2 leading-8 text-xl md:text-2xl text-center'
+          id='tahografi'
+        >
           <h2 className='mt-4 mb-5 text-3xl font-bold md:mt-10 md:text-4xl'>Tahografi</h2>
           <p className=''>U Ganjgo-line doo - RADIONICI ZA TAHOGRAFE nudimo Vam</p>
           <div className='grid grid-cols-12 gap-2 p-2 md:gap-6 md:p-10'>
@@ -292,8 +302,11 @@ const Usluge = () => {
       )}
 
       {/* VATROGASNI APARATI */}
-      {(activeButton === 1 || activeButton === 6) && (
-        <section className='bg-[#24262B] text-white px-5 md:py-5 py-2 leading-8 text-2xl transition-all duration-300'>
+      {activeButton === 5 && (
+        <section
+          className='bg-[#24262B] text-white px-5 md:py-5 py-2 leading-8 text-2xl transition-all duration-300'
+          id='vatrogasni'
+        >
           <div className='flex flex-col items-center justify-between gap-6 p-2 md:flex-row'>
             <div className='space-y-5 md:w-3/5 2xl:p-12'>
               <h2 className='text-3xl font-bold text-center md:text-4xl'>Vatrogasni aparati</h2>
@@ -310,8 +323,11 @@ const Usluge = () => {
       )}
 
       {/* TRANSPORT */}
-      {(activeButton === 1 || activeButton === 7) && (
-        <section className='bg-[#171B29] text-white 2xl:px-40 md:px-20 md:py-5 py-2 leading-8 text-2xl text-center'>
+      {activeButton === 6 && (
+        <section
+          className='bg-[#171B29] text-white 2xl:px-40 md:px-20 md:py-5 py-2 leading-8 text-2xl text-center'
+          id='transport'
+        >
           <h2 className='mt-4 text-4xl font-bold md:mt-10 md:mb-5'>Transport</h2>
           <div className='grid grid-cols-1 gap-8 p-2 mt-10 mb-10 md:p-0 md:grid-cols-5 md:gap-5 md:mt-20 md:mb-14 md:justify-items-center place-items-start'>
             <div className='flex flex-row items-center justify-center gap-3 md:gap-0 md:flex-col'>
