@@ -16,7 +16,7 @@ const Footer = () => {
                 Na našem tehničkom pregledu dočekaće vas stručno i ljubazno osoblje sa vrhunskom kvalitetom usluge...
               </p>
             </div>
-            <div className='flex items-center justify-between'>
+            {/* <div className='flex items-center justify-between'>
               <a href='' className='hover:cursor-pointer hover:text-slate-300'>
                 <FaFacebook size={30} />
               </a>
@@ -32,7 +32,7 @@ const Footer = () => {
               <a href='' className='hover:cursor-pointer hover:text-slate-300'>
                 <FaPhone size={25} />
               </a>
-            </div>
+            </div> */}
           </section>
 
           {/* USLUGE */}
@@ -77,18 +77,19 @@ const Footer = () => {
 
       {/* COPYRIGHTS */}
       <section className='p-2 md:p-6 bg-[#171B29] text-sm'>
-        <div className='grid grid-cols-1 md:grid-cols-3'>
+        {/* <div className='grid grid-cols-1 md:grid-cols-3'> */}
+        <div className='flex items-center justify-center'>
           <p className='p-2 text-center md:p-0 md:text-left md:col-span-2'>
             &copy; {currentYear} Ganjgo line. Sva prava zadržana.
           </p>
-          <div className='p-2 space-x-4 text-center md:p-0'>
+          {/* <div className='p-2 space-x-4 text-center md:p-0'>
             <a className='hover:text-slate-300' href='#'>
               Politika privatnosti
             </a>
             <a className='hover:text-slate-300' href='#'>
               Uslovi korištenja
             </a>
-          </div>
+          </div> */}
         </div>
       </section>
     </footer>

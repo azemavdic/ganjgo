@@ -94,7 +94,7 @@ const Navbar = ({ children }) => {
           </div>
 
           <div className='items-center justify-center hidden space-x-6 md:flex'>
-            <BsSearch size={25} />
+            {/* <BsSearch size={25} /> */}
             <Link href='/kontakt' className='px-8 py-2 bg-gradient-to-r from-[#0219AC] to-[#2D63F6] rounded-full'>
               Kontakt
             </Link>
