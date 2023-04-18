@@ -194,7 +194,7 @@ const Kontakt = () => {
             </div>
           </div>
 
-          {/* PJ LUKAVAC-TUZLA*/}
+          {/* PJ LUKAVAC-TUZLA */}
           <div className='bg-[#323A6B] p-6 rounded row-span-1 transition-all duration-300 hover:shadow-[#484d6d] hover:bg-[#323A6B]/60 hover:shadow-2xl hover:scale-105'>
             <h2 className='text-xl font-bold 2xl:text-2xl'>Auto Centar Ganjgo</h2>
             <h2 className='text-xl font-bold 2xl:text-2xl'>PJ Lukavac - Tuzla</h2>
