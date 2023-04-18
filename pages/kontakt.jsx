@@ -23,7 +23,7 @@ const Kontakt = () => {
         <h1 className='mb-4 text-xl font-bold md:mb-8 md:text-4xl '>Kontakt</h1>
         <div className='grid grid-cols-1 gap-5 mb-10 md:grid-cols-3'>
           {/* TEHNIČKI PREGLED */}
-          <div className='bg-[#323A6B] p-6 rounded row-span-3 space-y-4'>
+          <div className='bg-[#323A6B] p-6 rounded row-span-3 space-y-4 transition-all duration-300 hover:shadow-[#484d6d] hover:bg-[#323A6B]/60 hover:shadow-2xl hover:scale-105'>
             <h2 className='mb-5 text-xl font-bold 2xl:text-2xl'>Tehnički pregled</h2>
             <div className='space-y-6'>
               <div className='flex items-center space-x-5'>
@@ -70,7 +70,7 @@ const Kontakt = () => {
           </div>
 
           {/* HOMOLOGACIJA I CERTIFIKACIJA */}
-          <div className='bg-[#323A6B] p-6 rounded row-span-3 space-y-4'>
+          <div className='bg-[#323A6B] p-6 rounded row-span-3 space-y-4 transition-all duration-300 hover:shadow-[#484d6d] hover:bg-[#323A6B]/60 hover:shadow-2xl hover:scale-105'>
             <h2 className='mb-5 text-xl font-bold 2xl:text-2xl'>Homologacija i certifikacija</h2>
             <div className='space-y-6'>
               <div className='flex items-center space-x-5'>
@@ -98,7 +98,7 @@ const Kontakt = () => {
           </div>
 
           {/* TRANSPORT */}
-          <div className='bg-[#323A6B] p-6 rounded row-span-2 space-y-4'>
+          <div className='bg-[#323A6B] p-6 rounded row-span-2 space-y-4 transition-all duration-300 hover:shadow-[#484d6d] hover:bg-[#323A6B]/60 hover:shadow-2xl hover:scale-105'>
             <h2 className='mb-5 text-xl font-bold 2xl:text-2xl'>Transport</h2>
             <div className='space-y-6'>
               <div className='flex items-center space-x-5'>
@@ -128,7 +128,7 @@ const Kontakt = () => {
           </div>
 
           {/* FINANSIJE */}
-          {/* <div className='bg-[#323A6B] p-6 rounded row-span-1 space-y-4'>
+          {/* <div className='bg-[#323A6B] p-6 rounded row-span-1 space-y-4 transition-all duration-300 hover:shadow-[#484d6d] hover:bg-[#323A6B]/60 hover:shadow-2xl hover:scale-105'>
             <h2 className='mb-5 text-xl font-bold 2xl:text-2xl'>Finansije</h2>
 
             <div className='flex items-center space-x-5'>
@@ -142,7 +142,7 @@ const Kontakt = () => {
           </div> */}
 
           {/* AUTO CENTAR GANJGO */}
-          <div className='bg-[#323A6B] p-6 rounded row-span-2 space-y-4'>
+          <div className='bg-[#323A6B] p-6 rounded row-span-2 space-y-4 transition-all duration-300 hover:shadow-[#484d6d] hover:bg-[#323A6B]/60 hover:shadow-2xl hover:scale-105'>
             <h2 className='mb-5 text-xl font-bold 2xl:text-2xl'>Auto Centar Ganjgo</h2>
 
             <div className='space-y-6'>
@@ -177,7 +177,7 @@ const Kontakt = () => {
           </div>
 
           {/* GANJGO PETROL*/}
-          <div className='bg-[#323A6B] p-6 rounded row-span-1'>
+          <div className='bg-[#323A6B] p-6 rounded row-span-1 transition-all duration-300 hover:shadow-[#484d6d] hover:bg-[#323A6B]/60 hover:shadow-2xl hover:scale-105'>
             <h2 className='text-xl font-bold 2xl:text-2xl'>Ganjgo Petrol</h2>
             <p className='mb-3 text-sm'>Prodaja nafte i naftnih derivata</p>
             <div>
@@ -195,7 +195,7 @@ const Kontakt = () => {
           </div>
 
           {/* PJ LUKAVAC-TUZLA*/}
-          <div className='bg-[#323A6B] p-6 rounded row-span-1'>
+          <div className='bg-[#323A6B] p-6 rounded row-span-1 transition-all duration-300 hover:shadow-[#484d6d] hover:bg-[#323A6B]/60 hover:shadow-2xl hover:scale-105'>
             <h2 className='text-xl font-bold 2xl:text-2xl'>Auto Centar Ganjgo</h2>
             <h2 className='text-xl font-bold 2xl:text-2xl'>PJ Lukavac - Tuzla</h2>
             <div className='flex items-center mt-5 space-x-5'>
