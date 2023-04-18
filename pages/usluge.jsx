@@ -130,7 +130,7 @@ const Usluge = () => {
               </p>
             </div>
             <div className=''>
-              <Image src='/images/tehnicki_pregled.jpg' alt='tehnicki_pregled' width={1500} height={1000} />
+              <Image src='/images/homologacija.jpg' alt='homologacija' width={1500} height={1000} />
             </div>
           </div>
           <div className='w-full mt-10 space-y-2'>
@@ -172,7 +172,7 @@ const Usluge = () => {
               </p>
             </div>
             <div className=''>
-              <Image src='/images/tehnicki_pregled.jpg' alt='tehnicki_pregled' width={1500} height={1000} />
+              <Image src='/images/certifikacija.jpg' alt='certifikacija' width={1500} height={1000} />
             </div>
           </div>
 
@@ -302,7 +302,7 @@ const Usluge = () => {
               </p>
             </div>
             <div className=''>
-              <Image src='/images/tehnicki_pregled.jpg' alt='tehnicki_pregled' width={1500} height={1000} />
+              <Image src='/images/vatrogasno_3.jpg' alt='vatrogasno_3' width={1500} height={1000} />
             </div>
             <div></div>
           </div>

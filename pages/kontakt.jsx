@@ -42,6 +42,9 @@ const Kontakt = () => {
                   <a href='mailto:ganjgo.line@yahoo.com' className='hover:text-slate-300'>
                     ganjgo.line@yahoo.com
                   </a>
+                  <a href='mailto:finansije@ganjgoline.com' className='hover:text-slate-300'>
+                    finansije@ganjgoline.com
+                  </a>
                 </div>
               </div>
 
@@ -67,7 +70,7 @@ const Kontakt = () => {
           </div>
 
           {/* HOMOLOGACIJA I CERTIFIKACIJA */}
-          <div className='bg-[#323A6B] p-6 rounded row-span-2 space-y-4'>
+          <div className='bg-[#323A6B] p-6 rounded row-span-3 space-y-4'>
             <h2 className='mb-5 text-xl font-bold 2xl:text-2xl'>Homologacija i certifikacija</h2>
             <div className='space-y-6'>
               <div className='flex items-center space-x-5'>
@@ -125,7 +128,7 @@ const Kontakt = () => {
           </div>
 
           {/* FINANSIJE */}
-          <div className='bg-[#323A6B] p-6 rounded row-span-1 space-y-4'>
+          {/* <div className='bg-[#323A6B] p-6 rounded row-span-1 space-y-4'>
             <h2 className='mb-5 text-xl font-bold 2xl:text-2xl'>Finansije</h2>
 
             <div className='flex items-center space-x-5'>
@@ -136,7 +139,7 @@ const Kontakt = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* AUTO CENTAR GANJGO */}
           <div className='bg-[#323A6B] p-6 rounded row-span-2 space-y-4'>
