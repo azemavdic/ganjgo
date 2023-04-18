@@ -149,8 +149,8 @@ const Kontakt = () => {
               <div className='flex items-center space-x-5'>
                 <AiOutlineMail size={20} />
                 <div className='flex flex-col'>
-                  <a href='mailto:salonac@ganjgoline.com' className='hover:text-slate-300'>
-                    salonac@ganjgoline.com
+                  <a href='mailto:salon@acganjgo.com' className='hover:text-slate-300'>
+                    salon@acganjgo.com
                   </a>
                 </div>
               </div>
