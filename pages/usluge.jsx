@@ -10,17 +10,28 @@ import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
 const Usluge = () => {
   const [activeButton, setActiveButton] = useState(1)
   const [activePanels, setActivePanels] = useState([1, 2])
+  const [activeDescription, setActiveDescription] = useState([])
 
   function handleClickButton(buttonId) {
     setActiveButton(buttonId)
   }
 
-  function handleClickPanel(panelId) {
+  function handleShowPanel(panelId) {
     setActivePanels((prevState) => {
       if (prevState.includes(panelId)) {
         return prevState.filter((id) => id !== panelId)
       } else {
         return [...prevState, panelId]
+      }
+    })
+  }
+
+  function handleShowDescription(descId) {
+    setActiveDescription((prevState) => {
+      if (prevState.includes(descId)) {
+        return prevState.filter((id) => id !== descId)
+      } else {
+        return [...prevState, descId]
       }
     })
   }
@@ -52,11 +63,23 @@ const Usluge = () => {
         <div className='grid grid-cols-1 gap-16 md:grid-cols-3 justify-items-center'>
           {vrsteUsluge.map((el) => (
             <div className='flex flex-col items-center space-y-5 text-center 2xl:w-1/2' key={el.id}>
-              <div className='p-4 text-rose-600 rounded-full bg-[#393e4e]'>
+              <button
+                className='p-4 text-rose-600 rounded-full bg-[#393e4e] hover:bg-[#393e4e]/60 hover:text-rose-600/60'
+                onClick={(e) => handleShowDescription(el.id)}
+              >
                 <el.Icon size={30} />
-              </div>
+              </button>
               <h2 className='text-xl font-bold'>{el.title}</h2>
-              <p>{el.text}</p>
+              {/* <p>{el.text}</p> */}
+              <div
+                className={`transition-all duration-300 ease-in-out ${
+                  activeDescription.includes(el.id)
+                    ? 'max-h-screen translate-x-0 opacity-100'
+                    : 'max-h-0 -translate-x-10 opacity-0'
+                }`}
+              >
+                {el.text}
+              </div>
             </div>
           ))}
         </div>
@@ -115,7 +138,7 @@ const Usluge = () => {
               <div key={panel.id} className=''>
                 <button
                   className='w-full py-4 px-5 md:px-12 flex items-center justify-between text-base md:text-xl font-bold text-left rounded-lg bg-[#2D63F6] hover:bg-[#2D63F6]/80 focus:outline-none'
-                  onClick={() => handleClickPanel(panel.id)}
+                  onClick={() => handleShowPanel(panel.id)}
                 >
                   <span>{panel.title}</span>
                   {activePanels.includes(panel.id) ? <FaChevronUp /> : <FaChevronDown />}
