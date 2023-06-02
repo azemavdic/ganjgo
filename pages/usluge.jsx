@@ -1,8 +1,9 @@
 import Header from '@/components/Header'
 import Navbar from '@/components/Navbar'
-import { buttons, panels, vrsteUsluge } from '@/constants'
+import { buttons, formattedContent, formattedContent4, formattedContent5, panels, vrsteUsluge } from '@/constants'
 import Head from 'next/head'
-import Image from 'next/image'
+// import Image from 'next/image'
+import ExportedImage from 'next-image-export-optimizer'
 import React, { useState } from 'react'
 import { BsTruck } from 'react-icons/bs'
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
@@ -113,7 +114,7 @@ const Usluge = () => {
               </p>
             </div>
             <div className=''>
-              <Image src='/images/tehnicki_pregled.jpg' alt='tehnicki_pregled' width={1500} height={1000} />
+              <ExportedImage src='/images/tehnicki_pregled.jpg' alt='tehnicki_pregled' width={1500} height={1000} />
             </div>
             <div></div>
           </div>
@@ -134,7 +135,7 @@ const Usluge = () => {
               </p>
             </div>
             <div className=''>
-              <Image src='/images/homologacija.jpg' alt='homologacija' width={1500} height={1000} />
+              <ExportedImage src='/images/homologacija.jpg' alt='homologacija' width={1500} height={1000} />
             </div>
           </div>
           <div className='w-full mt-10 space-y-2'>
@@ -152,7 +153,7 @@ const Usluge = () => {
                     activePanels.includes(panel.id) ? 'max-h-screen py-5' : 'max-h-0'
                   }`}
                 >
-                  {panel.content}
+                  {panel.id === 5 ? formattedContent5 : panel.content}
                 </div>
               </div>
             ))}
@@ -179,7 +180,7 @@ const Usluge = () => {
               </p>
             </div>
             <div className=''>
-              <Image src='/images/certifikacija.jpg' alt='certifikacija' width={1500} height={1000} />
+              <ExportedImage src='/images/certifikacija.jpg' alt='certifikacija' width={1500} height={1000} />
             </div>
           </div>
 
@@ -315,7 +316,7 @@ const Usluge = () => {
               </p>
             </div>
             <div className=''>
-              <Image src='/images/vatrogasno_3.jpg' alt='vatrogasno_3' width={1500} height={1000} />
+              <ExportedImage src='/images/vatrogasno_3.jpg' alt='vatrogasno_3' width={1500} height={1000} />
             </div>
             <div></div>
           </div>
@@ -369,62 +370,62 @@ const Usluge = () => {
           {/* ZASTAVE */}
           <div className='grid grid-cols-3 gap-10 mt-10 text-lg md:grid-cols-6 mb-14 justify-items-center md:text-2xl place-items-start'>
             <div className='flex flex-col items-center justify-center space-y-3'>
-              <Image src='/images/icons/germany.png' alt='germany' width={50} height={50} />
+              <ExportedImage src='/images/icons/germany.png' alt='germany' width={50} height={50} />
               <p>Njemačka</p>
             </div>
 
             <div className='flex flex-col items-center justify-center space-y-3'>
-              <Image src='/images/icons/netherlands.png' alt='netherlands' width={50} height={50} />
+              <ExportedImage src='/images/icons/netherlands.png' alt='netherlands' width={50} height={50} />
               <p>Holandija</p>
             </div>
 
             <div className='flex flex-col items-center justify-center space-y-3'>
-              <Image src='/images/icons/belgium.png' alt='belgium' width={50} height={50} />
+              <ExportedImage src='/images/icons/belgium.png' alt='belgium' width={50} height={50} />
               <p>Belgija</p>
             </div>
 
             <div className='flex flex-col items-center justify-center space-y-3'>
-              <Image src='/images/icons/france.png' alt='france' width={50} height={50} />
+              <ExportedImage src='/images/icons/france.png' alt='france' width={50} height={50} />
               <p>Francuska</p>
             </div>
 
             <div className='flex flex-col items-center justify-center space-y-3'>
-              <Image src='/images/icons/spain.png' alt='spain' width={50} height={50} />
+              <ExportedImage src='/images/icons/spain.png' alt='spain' width={50} height={50} />
               <p>Španija</p>
             </div>
 
             <div className='flex flex-col items-center justify-center space-y-3'>
-              <Image src='/images/icons/italy.png' alt='italy' width={50} height={50} />
+              <ExportedImage src='/images/icons/italy.png' alt='italy' width={50} height={50} />
               <p>Italija</p>
             </div>
 
             <div className='flex flex-col items-center justify-center space-y-3'>
-              <Image src='/images/icons/czech-republic.png' alt='czech-republic' width={50} height={50} />
+              <ExportedImage src='/images/icons/czech-republic.png' alt='czech-republic' width={50} height={50} />
               <p>Češka</p>
             </div>
 
             <div className='flex flex-col items-center justify-center space-y-3'>
-              <Image src='/images/icons/croatia.png' alt='croatia' width={50} height={50} />
+              <ExportedImage src='/images/icons/croatia.png' alt='croatia' width={50} height={50} />
               <p>Hrvatska</p>
             </div>
 
             <div className='flex flex-col items-center justify-center space-y-3'>
-              <Image src='/images/icons/serbia.png' alt='serbia' width={50} height={50} />
+              <ExportedImage src='/images/icons/serbia.png' alt='serbia' width={50} height={50} />
               <p>Srbija</p>
             </div>
 
             <div className='flex flex-col items-center justify-center space-y-3'>
-              <Image src='/images/icons/slovenia.png' alt='slovenia' width={50} height={50} />
+              <ExportedImage src='/images/icons/slovenia.png' alt='slovenia' width={50} height={50} />
               <p>Slovenija</p>
             </div>
 
             <div className='flex flex-col items-center justify-center space-y-3'>
-              <Image src='/images/icons/switz.png' alt='switz' width={50} height={50} />
+              <ExportedImage src='/images/icons/switz.png' alt='switz' width={50} height={50} />
               <p>Švicarska</p>
             </div>
 
             <div className='flex flex-col items-center justify-center space-y-3'>
-              <Image src='/images/icons/poland.png' alt='poland' width={50} height={50} />
+              <ExportedImage src='/images/icons/poland.png' alt='poland' width={50} height={50} />
               <p>Poljska</p>
             </div>
           </div>

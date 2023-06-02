@@ -8,6 +8,7 @@ import { AiOutlineCloseCircle } from 'react-icons/ai'
 import { FaRegUser, FaUsers } from 'react-icons/fa'
 import { MdMiscellaneousServices } from 'react-icons/md'
 import { BiImages } from 'react-icons/bi'
+import ExportedImage from 'next-image-export-optimizer'
 
 export const navigationMenu = [
   {
@@ -44,11 +45,11 @@ const Navbar = ({ children }) => {
       <nav className='container mx-auto'>
         <div className='flex items-center justify-between mx-4 md:mx-0 md:justify-around md:mr-16'>
           <Link href='/' className='hidden md:block'>
-            <Image src='/images/logo.png' alt='logo' width='300' height='300' />
+            <ExportedImage src='/images/logo.png' alt='logo' width='300' height='300' />
           </Link>
           {/* MOBILNA navigacija */}
           <Link href='/' className='block md:hidden'>
-            <Image src='/images/logo.png' alt='logo' width='150' height='150' />
+            <ExportedImage src='/images/logo.png' alt='logo' width='150' height='150' />
           </Link>
           <button className='z-50 transition duration-300 md:hidden' onClick={(e) => setMenuActive((prev) => !prev)}>
             {menuActive ? <AiOutlineCloseCircle size={25} /> : <GiHamburgerMenu size={25} />}
@@ -61,7 +62,7 @@ const Navbar = ({ children }) => {
           >
             <div className='flex items-center justify-center'>
               <Link href='/' className='block md:hidden'>
-                <Image src='/images/logo.png' alt='logo' width='200' height='200' />
+                <ExportedImage src='/images/logo.png' alt='logo' width='200' height='200' />
               </Link>
             </div>
             <div className='mt-5 text-xl font-semibold text-white'>

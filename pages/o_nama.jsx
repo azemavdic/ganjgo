@@ -1,7 +1,8 @@
 import Header from '@/components/Header'
 import Navbar from '@/components/Navbar'
 import Head from 'next/head'
-import Image from 'next/image'
+// import Image from 'next/image'
+import ExportedImage from 'next-image-export-optimizer'
 import React from 'react'
 
 const About = () => {
@@ -41,7 +42,7 @@ const About = () => {
         </p>
         <div className='grid grid-cols-3 grid-rows-3 gap-3 mt-8 md:gap-6'>
           <div className='col-span-2 row-span-2'>
-            <Image
+            <ExportedImage
               width={2000}
               height={1000}
               src='/images/homologacija.jpg'
@@ -50,10 +51,10 @@ const About = () => {
             />
           </div>
           <div className='col-span-1'>
-            <Image width={2000} height={1000} src='/images/3_auta.jpg' alt='3_auta' />
+            <ExportedImage width={2000} height={1000} src='/images/3_auta.jpg' alt='3_auta' />
           </div>
           <div className='col-span-1 row-span-2'>
-            <Image
+            <ExportedImage
               width={2000}
               height={1000}
               src='/images/popravak.jpg'
@@ -62,7 +63,7 @@ const About = () => {
             />
           </div>
           <div className='col-span-1'>
-            <Image
+            <ExportedImage
               width={1000}
               height={1000}
               src='/images/benzinska.jpg'
@@ -71,10 +72,16 @@ const About = () => {
             />
           </div>
           <div className='col-span-1'>
-            <Image width={1000} height={1000} src='/images/auto.jpg' alt='auto' className='object-cover min-h-full' />
+            <ExportedImage
+              width={1000}
+              height={1000}
+              src='/images/auto.jpg'
+              alt='auto'
+              className='object-cover min-h-full'
+            />
           </div>
           <div className='col-span-1'>
-            <Image
+            <ExportedImage
               width={1000}
               height={300}
               src='/images/vatrogasno.jpg'
@@ -83,7 +90,13 @@ const About = () => {
             />
           </div>
           <div className='col-span-2 '>
-            <Image width={1300} height={1000} src='/images/ulaz.jpg' alt='ulaz' className='object-cover min-h-full' />
+            <ExportedImage
+              width={1300}
+              height={1000}
+              src='/images/ulaz.jpg'
+              alt='ulaz'
+              className='object-cover min-h-full'
+            />
           </div>
         </div>
       </section>

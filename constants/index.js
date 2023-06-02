@@ -98,7 +98,8 @@ export const panels = [
   {
     id: 4,
     title: 'Kako izvršiti provjeru prije odluke o kupovini vozila?',
-    content: '',
+    content:
+      'Ukoliko ste prethodno provjerili zadovoljava li Vaše vozilo kriterije homologacije, tada nema nikakve bojazni. Rezultat pregleda će biti "Potvrda o usklađenosti pojedinačno pregledanog vozila". Nakon toga možete pristupiti carinjenju, a potom registraciji vozila.',
   },
   {
     id: 5,
@@ -112,3 +113,19 @@ export const panels = [
       'U slučaju da vozilo ne zadovoljava kriterije homologacije, preporučujemo odustajanje od kupovine, jer takvo se vozilo neće moći niti ocariniti niti registrovati u BiH; povratak u državu gdje je kupljeno također neće biti moguć ili će uzrokovati velike financijske izdatke. Ukoliko vozilo zadovoljava kriterije homologacije, nakon što obavite kupoprodajne procedure te na graničnom prijelazu prijavite uvoz vozila, možete se obratiti Vama najbližem tehničkom servisu ovlaštenom za pregled vozila, koji će online vezom zatražiti izdavanje "Potvrde proizvođača". Potvrda proizvođača je dokument koji, sa svojim tehničkim i homologacijskim podacima, služi za obavljanje homologacijskog pregleda na ovlaštenim ispitnim mjestima',
   },
 ]
+
+export const formattedContent5 = (
+  <div>
+    <ul className='list-disc'>
+      <li>Prezime, ime, adresa i kontakt telefon (mobitel).</li>
+      <li>Svrha doznake: USLUGA PROVJERE VOZILA i navesti broj šasije (17 brojki).</li>
+      <li>Primalac: GANJGOLINE d.o.o. 203. brigade br. 88 Matuzići.</li>
+    </ul>
+    <p>
+      Uplatnicu sa podacima poslati na fax broj 033 774 897 ili uplatnicu skenirati i poslati na e-mail adresu:
+      midhat@ganjgoline.com. U cilju što bržeg odgovora na Vaš upit, poželjno je navesti Vaš broj fax-a ili e-mail
+      adresu na koju ćemo odgovoriti. U suprotnom, pismeni odgovor će biti proslijeđen putem pošte na adresu navedenu na
+      uplatnici.
+    </p>
+  </div>
+)
